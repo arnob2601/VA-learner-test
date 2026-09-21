@@ -1,0 +1,151 @@
+/* kiosk.css: Authentic Virginia DMV Computerized Kiosk Terminal Theme */
+
+body.theme-kiosk {
+  --primary: #003366;
+  --primary-hover: #002244;
+  --primary-light: #EBF3FA;
+  --bg: #0A192F;
+  --surface: #102A43;
+  --surface-subtle: #0B1D3A;
+  --text-main: #F0F4F8;
+  --text-muted: #9FB3C8;
+  --border: #243B53;
+  --border-light: #102A43;
+  --accent: #F7C948;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  background-color: #0A192F;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
+
+/* Kiosk Bezel & Frame Header */
+body.theme-kiosk .top-nav {
+  background: #001F3F;
+  border-bottom: 4px solid #F7C948;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+body.theme-kiosk .logo-text h1 {
+  color: #F7C948;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+body.theme-kiosk .logo-text span {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+body.theme-kiosk .sub-nav {
+  background: #002B49;
+  border-bottom: 2px solid #243B53;
+}
+
+body.theme-kiosk .nav-link {
+  color: #D9E2EC;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+body.theme-kiosk .nav-link.active {
+  color: #F7C948;
+  border-bottom-color: #F7C948;
+}
+
+/* Kiosk Question Card */
+body.theme-kiosk .question-card {
+  background: #102A43;
+  border: 3px solid #334E68;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+body.theme-kiosk .question-text {
+  color: #F7C948;
+  font-size: 1.45rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Large Kiosk Touch Options */
+body.theme-kiosk .option-card {
+  background: #0B1D3A;
+  border: 3px solid #334E68;
+  border-radius: 8px;
+  min-height: 68px;
+  font-size: 1.15rem;
+  color: #F0F4F8;
+  transition: all 0.15s ease;
+}
+
+body.theme-kiosk .option-card:hover:not(:disabled) {
+  border-color: #F7C948;
+  background-color: #102A43;
+}
+
+body.theme-kiosk .option-card.selected {
+  border-color: #F7C948;
+  background-color: #1B3A5A;
+  box-shadow: 0 0 0 3px #F7C948;
+}
+
+body.theme-kiosk .option-letter {
+  background: #243B53;
+  color: #F7C948;
+  border: 2px solid #486581;
+  width: 38px;
+  height: 38px;
+  font-size: 1.1rem;
+}
+
+body.theme-kiosk .option-card.selected .option-letter {
+  background: #F7C948;
+  color: #001F3F;
+  border-color: #F7C948;
+}
+
+body.theme-kiosk .option-card.correct {
+  border-color: #00E676 !important;
+  background-color: rgba(0, 230, 118, 0.15) !important;
+  color: #00E676 !important;
+}
+
+body.theme-kiosk .option-card.incorrect {
+  border-color: #FF5252 !important;
+  background-color: rgba(255, 82, 82, 0.15) !important;
+  color: #FF5252 !important;
+}
+
+body.theme-kiosk .btn-primary {
+  background-color: #F7C948;
+  color: #001F3F;
+  border: 2px solid #E0A800;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+body.theme-kiosk .btn-primary:hover {
+  background-color: #ECC94B;
+}
+
+/* Kiosk Progress & Timer */
+body.theme-kiosk .exam-meta-bar {
+  background: #001F3F;
+  border: 2px solid #243B53;
+}
+
+body.theme-kiosk .exam-timer {
+  background: #0B1D3A;
+  color: #F7C948;
+  border-color: #334E68;
+}
+
+body.theme-kiosk .exam-progress-bar {
+  background: #F7C948;
+}
+
+body.theme-kiosk .hero-banner {
+  background: linear-gradient(135deg, #002B49, #001F3F);
+  border: 2px solid #243B53;
+}

@@ -1,0 +1,522 @@
+[
+  {
+    "id": "sq1",
+    "signId": "stop_sign",
+    "question": "What must you do when you see this eight-sided red sign?",
+    "options": [
+      "Slow down and proceed if no other vehicles are approaching.",
+      "Come to a complete stop at the stop line or crosswalk and yield right-of-way.",
+      "Stop only if pedestrians or oncoming cars are in the intersection.",
+      "Slow down to 5 mph and roll through if the road is clear."
+    ],
+    "answerIndex": 1,
+    "explanation": "An octagon always indicates a STOP sign. In Virginia, you must come to a COMPLETE stop at the stop line, marked crosswalk, or edge of the intersection before yielding and proceeding."
+  },
+  {
+    "id": "sq2",
+    "signId": "yield_sign",
+    "question": "What is the meaning of this downward-pointing triangular sign?",
+    "options": [
+      "You have the right-of-way over cross traffic.",
+      "Slow down, prepare to stop, and yield the right-of-way to vehicles and pedestrians.",
+      "You must come to a complete stop at all times.",
+      "Do not enter the roadway under any circumstance."
+    ],
+    "answerIndex": 1,
+    "explanation": "A downward-pointing triangle is exclusively used for YIELD signs. You must slow down, yield to any traffic or pedestrians, and stop if necessary to let them proceed."
+  },
+  {
+    "id": "sq3",
+    "signId": "school_zone",
+    "question": "What does this five-sided (pentagon) fluorescent yellow-green sign indicate?",
+    "options": [
+      "Pedestrian crosswalk on a multi-lane highway.",
+      "School zone or school crossing ahead; watch for children.",
+      "Public park or recreation area entrance.",
+      "Construction zone with flaggers present."
+    ],
+    "answerIndex": 1,
+    "explanation": "A five-sided pentagon pointing up is uniquely reserved for School Zones and School Crossings. Be alert for children and observe posted school speed limits (typically 25 MPH)."
+  },
+  {
+    "id": "sq4",
+    "signId": "no_passing_zone",
+    "question": "Where will you find this yellow pennant-shaped sign, and what does it mean?",
+    "options": [
+      "Posted on the right side indicating a passing zone begins.",
+      "Posted on the left side of the road indicating the start of a No-Passing Zone.",
+      "Posted at school zones indicating no stopping.",
+      "Posted on multi-lane highways indicating lane reduction."
+    ],
+    "answerIndex": 1,
+    "explanation": "A pennant-shaped sign is always posted on the LEFT side of the roadway facing drivers, marking the beginning of a zone where passing other vehicles is strictly prohibited."
+  },
+  {
+    "id": "sq5",
+    "signId": "railroad_crossbuck",
+    "question": "When approaching this white crossbuck sign, what is required of Virginia drivers?",
+    "options": [
+      "Treat it as a yield sign; look, listen, and stop if a train is approaching.",
+      "Speed up to clear the tracks before the gate lowers.",
+      "Always come to a mandatory complete stop, even if no train is coming.",
+      "Sound your horn twice before crossing the tracks."
+    ],
+    "answerIndex": 0,
+    "explanation": "A railroad crossbuck sign indicates a railroad crossing and must be treated as a yield sign. If lights are flashing, gates are down, or a train is visible, you must stop between 15 and 50 feet of the nearest rail."
+  },
+  {
+    "id": "sq6",
+    "signId": "railroad_advance",
+    "question": "What does this round yellow sign with a black 'X' and 'RR' warn drivers about?",
+    "options": [
+      "Rest area ahead on the interstate.",
+      "Roundabout intersection ahead.",
+      "Advance warning of a railroad crossing ahead.",
+      "Road repairs and lane closures ahead."
+    ],
+    "answerIndex": 2,
+    "explanation": "A circular sign is exclusively reserved for railroad advance warning. It tells you a railroad crossing is ahead so you can slow down and look both ways."
+  },
+  {
+    "id": "sq7",
+    "signId": "do_not_enter",
+    "question": "What should you do if you see this red and white square sign?",
+    "options": [
+      "Proceed cautiously with your hazard lights on.",
+      "Do not drive onto this ramp or roadway; you are facing oncoming traffic.",
+      "Authorized government vehicles only may enter.",
+      "Entry is prohibited only between 10 PM and 6 AM."
+    ],
+    "answerIndex": 1,
+    "explanation": "DO NOT ENTER signs are posted at freeway exit ramps and one-way streets to notify drivers that traffic is traveling in the opposite direction."
+  },
+  {
+    "id": "sq8",
+    "signId": "wrong_way",
+    "question": "If you drive past this red sign, what emergency action must you take?",
+    "options": [
+      "Accelerate to reach the next exit as quickly as possible.",
+      "Pull over to the side immediately, stop, and turn around when it is safe.",
+      "Continue driving on the left shoulder.",
+      "Sound your horn continuously to warn oncoming vehicles."
+    ],
+    "answerIndex": 1,
+    "explanation": "WRONG WAY signs indicate you are traveling against traffic on a one-way street or ramp. Pull over immediately to the side of the road, stop, and turn around safely."
+  },
+  {
+    "id": "sq9",
+    "signId": "no_u_turn",
+    "question": "What does a red circle with a diagonal slash across a symbol mean?",
+    "options": [
+      "The indicated action is recommended during off-peak hours.",
+      "The indicated action is strictly prohibited.",
+      "Caution is advised when performing the action.",
+      "The action is permitted only for emergency vehicles."
+    ],
+    "answerIndex": 1,
+    "explanation": "A red circle with a diagonal slash across a symbol always means that the maneuver shown is prohibited by law. Here, U-turns are illegal."
+  },
+  {
+    "id": "sq10",
+    "signId": "slippery_when_wet",
+    "question": "What does this diamond warning sign indicate?",
+    "options": [
+      "Winding mountain road with hairpin curves ahead.",
+      "Road surface becomes slippery when wet; reduce speed and avoid sudden maneuvers.",
+      "Vehicles may experience strong crosswinds on this bridge.",
+      "Rough road surface with gravel or unpaved pavement."
+    ],
+    "answerIndex": 1,
+    "explanation": "This sign warns that the pavement is slick and slippery when wet. Roads are especially slippery during the first 10-15 minutes of a rain shower due to accumulated oil."
+  },
+  {
+    "id": "sq11",
+    "signId": "divided_highway_begins",
+    "question": "What does this diamond sign with a divider at the top mean?",
+    "options": [
+      "Divided highway ends ahead; prepare for two-way undivided traffic.",
+      "Divided highway begins ahead; keep to the right of the physical median divider.",
+      "Two-way traffic ahead with no passing permitted.",
+      "Steep downhill grade ahead; shift to a lower gear."
+    ],
+    "answerIndex": 1,
+    "explanation": "When the median island symbol is at the TOP of the sign between opposing arrows, it warns that a divided highway begins and you must keep right of the median."
+  },
+  {
+    "id": "sq12",
+    "signId": "divided_highway_ends",
+    "question": "What does this diamond sign with the median divider at the bottom mean?",
+    "options": [
+      "Divided highway ends ahead; oncoming traffic will no longer be separated by a median.",
+      "Divided highway begins ahead; move into the right lane immediately.",
+      "Dual turn lanes are ending ahead.",
+      "Freeway ramp merging onto an interstate highway."
+    ],
+    "answerIndex": 0,
+    "explanation": "When the median island symbol is at the BOTTOM of the sign, it indicates the divided highway is ending and traffic will be traveling both ways on an undivided roadway."
+  },
+  {
+    "id": "sq13",
+    "signId": "two_way_traffic",
+    "question": "What does this sign with two opposing vertical arrows warn you about?",
+    "options": [
+      "Passing is allowed in both directions.",
+      "You are on or approaching a two-way street with traffic traveling in opposite directions.",
+      "Express lanes are open in both directions.",
+      "Dual left turn lanes ahead at the intersection."
+    ],
+    "answerIndex": 1,
+    "explanation": "This warning sign alerts you that you are leaving a one-way street or divided roadway and entering a two-way roadway where traffic travels in opposite directions."
+  },
+  {
+    "id": "sq14",
+    "signId": "lane_ends_merge",
+    "question": "What action should you take when you see this lane ends / merge sign?",
+    "options": [
+      "Drivers in the continuous left lane must yield to merging vehicles.",
+      "The right lane is ending; drivers in that lane must safely merge left and yield right-of-way.",
+      "Stop at the end of the lane before entering traffic.",
+      "Drive onto the shoulder until traffic clears."
+    ],
+    "answerIndex": 1,
+    "explanation": "The right lane is ending ahead. Vehicles in the ending lane must merge left into the continuous lane, yielding to traffic already established in that lane."
+  },
+  {
+    "id": "sq15",
+    "signId": "roundabout_ahead",
+    "question": "What are the rules when approaching a roundabout marked with this sign?",
+    "options": [
+      "Vehicles entering the roundabout have the right-of-way.",
+      "Enter in a clockwise direction at high speed to match circulating traffic.",
+      "Slow down, yield to traffic already in the circle and pedestrians, and travel counter-clockwise.",
+      "Always come to a mandatory complete stop before entering the roundabout."
+    ],
+    "answerIndex": 2,
+    "explanation": "When approaching a roundabout, slow down and yield to pedestrians and vehicles already inside the circle. Always travel to the right in a counter-clockwise direction."
+  },
+  {
+    "id": "sq16",
+    "signId": "stop_ahead",
+    "question": "Why is this 'Stop Ahead' warning sign posted?",
+    "options": [
+      "To let drivers know they must stop immediately at this exact sign.",
+      "To alert drivers that a stop sign is upcoming and may be hidden from early view.",
+      "To warn of a red traffic signal light ahead.",
+      "To indicate a mandatory brake inspection station."
+    ],
+    "answerIndex": 1,
+    "explanation": "A Stop Ahead sign gives drivers early warning that a stop sign is located ahead, typically where hills, curves, or obstacles obstruct direct view of the stop sign."
+  },
+  {
+    "id": "sq17",
+    "signId": "yield_ahead",
+    "question": "What should you prepare to do when you observe this 'Yield Ahead' sign?",
+    "options": [
+      "Prepare to slow down and yield right-of-way at the upcoming yield sign.",
+      "Speed up to pass vehicles before the intersection.",
+      "Make an immediate U-turn before the yield sign.",
+      "Honk your horn to claim right-of-way."
+    ],
+    "answerIndex": 0,
+    "explanation": "A Yield Ahead sign warns that a yield sign is ahead so you can begin slowing down and scanning for approaching cross traffic."
+  },
+  {
+    "id": "sq18",
+    "signId": "signal_ahead",
+    "question": "What does this yellow diamond sign with a traffic light graphic tell you?",
+    "options": [
+      "A traffic signal is ahead; be prepared to stop if the light is red.",
+      "Traffic signals are currently malfunctioning ahead.",
+      "Flashing yellow caution lights only are present ahead.",
+      "Emergency vehicle dispatch station ahead."
+    ],
+    "answerIndex": 0,
+    "explanation": "This sign indicates a traffic control signal is approaching at the next intersection. Be prepared to stop if the light changes to yellow or red."
+  },
+  {
+    "id": "sq19",
+    "signId": "deer_crossing",
+    "question": "What must you keep in mind when driving through an area marked with this sign?",
+    "options": [
+      "Deer are only active during broad daylight.",
+      "Deer frequently cross here; watch roadside shoulders, especially at dusk and dawn.",
+      "Sound your horn continuously to scare animals away.",
+      "Deer always travel alone so only watch for one."
+    ],
+    "answerIndex": 1,
+    "explanation": "Deer crossing signs are posted where deer frequently cross roads. Deer are most active at dawn and dusk, and frequently travel in groups."
+  },
+  {
+    "id": "sq20",
+    "signId": "pedestrian_crossing",
+    "question": "What does this fluorescent yellow-green diamond sign mean?",
+    "options": [
+      "Pedestrians are prohibited from crossing this street.",
+      "A pedestrian crosswalk is ahead; drivers must yield right-of-way to pedestrians.",
+      "Jogging path parallel to the highway.",
+      "Hitchhiking pickup zone ahead."
+    ],
+    "answerIndex": 1,
+    "explanation": "This sign alerts drivers to a pedestrian crossing ahead. In Virginia, motorists must yield to pedestrians in marked crosswalks and intersections."
+  },
+  {
+    "id": "sq21",
+    "signId": "hill_steep_downgrade",
+    "question": "What should drivers do when seeing this truck on an incline sign?",
+    "options": [
+      "Shift into neutral to save fuel down the grade.",
+      "Check brakes and shift into a lower gear to control speed before starting downhill.",
+      "Pump the brakes hard and rapidly throughout the descent.",
+      "Speed up to maintain highway momentum."
+    ],
+    "answerIndex": 1,
+    "explanation": "This sign warns of a steep downhill slope ahead. Drivers (especially heavy vehicles) should downshift to use engine braking and avoid riding the brakes."
+  },
+  {
+    "id": "sq22",
+    "signId": "keep_right",
+    "question": "What does this white regulatory sign with an angled arrow instruct drivers to do?",
+    "options": [
+      "Make an immediate right turn at the intersection.",
+      "Keep to the right of an upcoming traffic island, divider, or obstruction.",
+      "Only vehicles in the right lane may continue straight.",
+      "Right turn on red is prohibited."
+    ],
+    "answerIndex": 1,
+    "explanation": "The Keep Right sign directs traffic to stay to the right of a traffic island, median, or highway obstruction."
+  },
+  {
+    "id": "sq23",
+    "signId": "road_work_ahead",
+    "question": "In Virginia, what is the maximum fine for speeding in a highway work zone marked with orange signs?",
+    "options": [
+      "Up to $100.",
+      "Up to $250.",
+      "Up to $500.",
+      "Up to $1,000."
+    ],
+    "answerIndex": 2,
+    "explanation": "Under Virginia law, speeding in a designated highway work zone when workers are present carries an increased penalty of up to a $500 fine."
+  },
+  {
+    "id": "sq24",
+    "signId": "flagger_ahead",
+    "question": "What must you do when approaching a work zone with a flagger?",
+    "options": [
+      "Follow the flagger's hand signals and paddle commands above other signs.",
+      "Ignore the flagger if the traffic light is green.",
+      "Sound your horn to indicate you are passing the flagger.",
+      "Proceed at standard posted highway speed."
+    ],
+    "answerIndex": 0,
+    "explanation": "A flagger's directions take legal precedence over existing signs and traffic signals in a work zone. Always follow the flagger's instructions."
+  },
+  {
+    "id": "sq25",
+    "signId": "workers_ahead",
+    "question": "What color is universally used on signs to identify temporary construction and maintenance work zones?",
+    "options": [
+      "Yellow",
+      "Orange",
+      "Fluorescent Yellow-Green",
+      "Brown"
+    ],
+    "answerIndex": 1,
+    "explanation": "Orange is exclusively designated for temporary traffic control, construction, and maintenance work zones."
+  },
+  {
+    "id": "sq26",
+    "signId": "handicapped_parking",
+    "question": "Who is legally allowed to park in a space designated with this blue wheelchair sign?",
+    "options": [
+      "Anyone picking up a senior citizen.",
+      "Any vehicle making a quick delivery under 5 minutes.",
+      "Only vehicles displaying official disabled license plates or disabled parking placards.",
+      "Any vehicle with hazard flashers turned on."
+    ],
+    "answerIndex": 2,
+    "explanation": "In Virginia, disabled parking spaces are reserved strictly for individuals with valid disabled parking license plates or disabled placards. Fines range from $100 to $500."
+  },
+  {
+    "id": "sq27",
+    "signId": "low_clearance",
+    "question": "What does a sign stating '12'-6\"' with top and bottom arrows mean?",
+    "options": [
+      "The bridge or overpass ahead has a maximum height clearance of 12 feet, 6 inches.",
+      "The roadway width is restricted to 12 feet, 6 inches.",
+      "Maximum vehicle length allowed on this roadway is 12.6 feet.",
+      "The distance to the nearest fuel station is 12.6 miles."
+    ],
+    "answerIndex": 0,
+    "explanation": "This warning sign alerts drivers that the overhead structure has limited vertical clearance (12 feet 6 inches). Vehicles exceeding this height must seek an alternate route."
+  },
+  {
+    "id": "sq28",
+    "signId": "sharp_curve_right",
+    "question": "What does a diamond sign with a sharp 90-degree arrow indicate?",
+    "options": [
+      "A sharp right turn ahead; slow down substantially before the turn.",
+      "Right lane must exit onto the freeway.",
+      "Road detour to the right ahead.",
+      "Side street intersection on the right."
+    ],
+    "answerIndex": 0,
+    "explanation": "A sharp 90-degree arrow warns of an impending sharp curve or turn. You should brake to a safe speed before entering the curve."
+  },
+  {
+    "id": "sq29",
+    "signId": "winding_road",
+    "question": "What does a winding arrow sign warn you about?",
+    "options": [
+      "A steep mountain descent ahead.",
+      "A series of three or more consecutive curves ahead in the road.",
+      "A slippery bridge surface in freezing temperatures.",
+      "A detour through a residential neighborhood."
+    ],
+    "answerIndex": 1,
+    "explanation": "A winding road sign indicates a series of curves ahead (at least three). Reduce your speed and maintain your lane position."
+  },
+  {
+    "id": "sq30",
+    "signId": "added_lane",
+    "question": "How does an 'Added Lane' sign differ from a 'Merge' sign?",
+    "options": [
+      "In an added lane, drivers must come to a complete stop before continuing.",
+      "An added lane provides a new separate travel lane, so merging into traffic is not immediately required.",
+      "In an added lane, you must merge immediately into the left lane.",
+      "Added lanes are reserved strictly for high-occupancy vehicles."
+    ],
+    "answerIndex": 1,
+    "explanation": "An Added Lane sign shows two parallel arrows, meaning a new lane is formed alongside the existing road and entering vehicles do not have to merge immediately."
+  },
+  {
+    "id": "sq31",
+    "signId": "slow_moving_vehicle",
+    "question": "What does a triangular orange emblem with a dark red border mounted on a vehicle mean?",
+    "options": [
+      "The vehicle is transporting hazardous materials.",
+      "The vehicle is designed to travel at 25 MPH or less.",
+      "The vehicle is an emergency first-responder vehicle.",
+      "The vehicle is oversized and requires a police escort."
+    ],
+    "answerIndex": 1,
+    "explanation": "A reflective orange triangle with a red border is the Slow-Moving Vehicle emblem, required on vehicles that travel at speeds of 25 MPH or less (such as tractors and road machinery)."
+  },
+  {
+    "id": "sq32",
+    "signId": "center_turn_lane",
+    "question": "What is the proper use of a center lane marked with opposing turn arrows and 'ONLY'?",
+    "options": [
+      "Use it as a passing lane to overtake slow drivers.",
+      "Use it only to make left turns from either direction or enter traffic after turning left.",
+      "Use it as a continuous travel lane when traffic is heavy.",
+      "Use it for emergency stopping and parking."
+    ],
+    "answerIndex": 1,
+    "explanation": "The center two-way left turn lane is strictly for turning left from either direction. It must never be used for through travel or passing."
+  },
+  {
+    "id": "sq33",
+    "signId": "speed_limit_25",
+    "question": "Unless otherwise posted, what is the default legal speed limit in Virginia residential areas?",
+    "options": [
+      "15 MPH",
+      "20 MPH",
+      "25 MPH",
+      "35 MPH"
+    ],
+    "answerIndex": 2,
+    "explanation": "In Virginia, the default statutory speed limit in school, business, and residential areas is 25 MPH unless a different limit is posted."
+  },
+  {
+    "id": "sq34",
+    "signId": "speed_limit_55",
+    "question": "In Virginia, what is the maximum speed limit on non-interstate highways if not otherwise posted?",
+    "options": [
+      "45 MPH",
+      "50 MPH",
+      "55 MPH",
+      "65 MPH"
+    ],
+    "answerIndex": 2,
+    "explanation": "Unless posted otherwise, 55 MPH is the maximum legal speed limit on all secondary and primary paved highways in Virginia other than school/business/residential areas."
+  },
+  {
+    "id": "sq35",
+    "signId": "side_road_intersection",
+    "question": "What does this yellow diamond sign with a cross intersection warn of?",
+    "options": [
+      "A hospital entrance is ahead.",
+      "A side road enters the highway from the right ahead; watch for entering traffic.",
+      "Railroad tracks crossing the highway ahead.",
+      "Four-way stop intersection ahead."
+    ],
+    "answerIndex": 1,
+    "explanation": "A side road sign warns of an upcoming side street intersecting from the side shown. Drivers should watch for vehicles entering or turning."
+  },
+  {
+    "id": "sq36",
+    "signId": "stop_sign",
+    "question": "What shape is exclusively used for STOP signs across the United States and Virginia?",
+    "options": [
+      "Hexagon (6 sides)",
+      "Octagon (8 sides)",
+      "Pentagon (5 sides)",
+      "Diamond (4 sides)"
+    ],
+    "answerIndex": 1,
+    "explanation": "The 8-sided Octagon shape is exclusively used for STOP signs so it can be identified even when covered by snow or viewed from behind."
+  },
+  {
+    "id": "sq37",
+    "signId": "yield_sign",
+    "question": "What shape is exclusively used for YIELD signs?",
+    "options": [
+      "Equilateral triangle pointing down",
+      "Isosceles triangle pointing right",
+      "Diamond pointing up",
+      "Vertical rectangle"
+    ],
+    "answerIndex": 0,
+    "explanation": "An equilateral triangle pointing downwards is exclusively used for YIELD signs."
+  },
+  {
+    "id": "sq38",
+    "signId": "school_zone",
+    "question": "What sign shape is exclusively reserved for School Zones and School Crossings in Virginia?",
+    "options": [
+      "Round (Circle)",
+      "Diamond",
+      "Pentagon (5-sided, pointing up)",
+      "Pennant (pointing right)"
+    ],
+    "answerIndex": 2,
+    "explanation": "The 5-sided Pentagon pointing upwards is uniquely reserved for School Zone and School Crossing signs."
+  },
+  {
+    "id": "sq39",
+    "signId": "no_passing_zone",
+    "question": "What shape is the No Passing Zone warning sign?",
+    "options": [
+      "Pennant (three-sided pointing right)",
+      "Octagon (eight-sided)",
+      "Crossbuck (X-shape)",
+      "Horizontal rectangle"
+    ],
+    "answerIndex": 0,
+    "explanation": "The pennant shape (pointing right) is exclusively used for No Passing Zone signs and is posted on the left side of the road."
+  },
+  {
+    "id": "sq40",
+    "signId": "railroad_advance",
+    "question": "What shape is exclusively reserved for advance warning of railroad crossings?",
+    "options": [
+      "Square",
+      "Octagon",
+      "Round (Circle)",
+      "Downward triangle"
+    ],
+    "answerIndex": 2,
+    "explanation": "A circular round sign is exclusively used for advance warnings of upcoming railroad crossings."
+  }
+]

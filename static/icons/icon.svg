@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2027"/>
+      <stop offset="50%" stop-color="#203a43"/>
+      <stop offset="100%" stop-color="#2c5364"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDB913"/>
+      <stop offset="100%" stop-color="#D49A00"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Rounded Badge -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="url(#bg)" stroke="#FDB913" stroke-width="8"/>
+  
+  <!-- Stop Sign Accent -->
+  <polygon points="120,80 180,80 220,120 220,180 180,220 120,220 80,180 80,120" fill="#D32F2F" stroke="#FFFFFF" stroke-width="4"/>
+  <text x="150" y="160" font-family="Impact, Arial Black, sans-serif" font-size="34" font-weight="bold" fill="#FFFFFF" text-anchor="middle">STOP</text>
+  
+  <!-- Yield Sign Accent -->
+  <polygon points="310,90 410,90 360,180" fill="#D32F2F"/>
+  <polygon points="325,98 395,98 360,165" fill="#FFFFFF"/>
+  <text x="360" y="125" font-family="Arial Black, sans-serif" font-size="14" font-weight="900" fill="#D32F2F" text-anchor="middle">YIELD</text>
+  
+  <!-- State of Virginia Badge Banner -->
+  <rect x="56" y="250" width="400" height="70" rx="16" fill="url(#gold)"/>
+  <text x="256" y="296" font-family="Arial Black, sans-serif" font-size="32" font-weight="900" fill="#0A192F" text-anchor="middle" letter-spacing="2">VIRGINIA DMV</text>
+  
+  <!-- Subtext -->
+  <text x="256" y="370" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" text-anchor="middle">LEARNER'S PERMIT</text>
+  <text x="256" y="415" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#00E676" text-anchor="middle">EXAM SIMULATOR</text>
+  
+  <!-- Star accents -->
+  <text x="100" y="450" font-size="24" fill="#FDB913">★</text>
+  <text x="180" y="450" font-size="24" fill="#FDB913">★</text>
+  <text x="256" y="450" font-size="24" fill="#FDB913">★</text>
+  <text x="332" y="450" font-size="24" fill="#FDB913">★</text>
+  <text x="412" y="450" font-size="24" fill="#FDB913">★</text>
+</svg>

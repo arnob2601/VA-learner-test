@@ -1,0 +1,173 @@
+{
+  "speed_limits": [
+    {
+      "zone": "School, Business, Residential",
+      "speed": "25 MPH",
+      "notes": "Unless otherwise posted"
+    },
+    {
+      "zone": "Unpaved Secondary Roads",
+      "speed": "35 MPH",
+      "notes": "Statutory limit in Virginia"
+    },
+    {
+      "zone": "Non-Interstate Paved Highways",
+      "speed": "55 MPH",
+      "notes": "Unless otherwise posted"
+    },
+    {
+      "zone": "Interstate Highways",
+      "speed": "55 - 70 MPH",
+      "notes": "As posted by VDOT"
+    },
+    {
+      "zone": "Reckless Driving Threshold",
+      "speed": "85+ MPH or 20+ MPH over limit",
+      "notes": "Class 1 Misdemeanor in VA"
+    }
+  ],
+  "following_distances": [
+    {
+      "speed_range": "Under 35 MPH",
+      "seconds": "2 Seconds",
+      "notes": "On dry, clean pavement"
+    },
+    {
+      "speed_range": "35 to 45 MPH",
+      "seconds": "3 Seconds",
+      "notes": "Allows reaction + braking space"
+    },
+    {
+      "speed_range": "46 to 70 MPH",
+      "seconds": "4 Seconds",
+      "notes": "High speed highway rule"
+    },
+    {
+      "speed_range": "Rain, Ice, Snow, Fog",
+      "seconds": "Double or Triple",
+      "notes": "Add buffer when following trucks or motorcycles"
+    }
+  ],
+  "parking_distances": [
+    {
+      "location": "Fire Hydrant",
+      "distance": "15 Feet",
+      "rule": "Never park within 15 ft"
+    },
+    {
+      "location": "Intersection / Crosswalk",
+      "distance": "20 Feet",
+      "rule": "Maintain sight lines for pedestrians"
+    },
+    {
+      "location": "Railroad Crossing",
+      "distance": "50 Feet",
+      "rule": "From nearest rail"
+    },
+    {
+      "location": "Fire Station Entrance",
+      "distance": "15 Feet",
+      "rule": "Same side (75 ft on opposite side)"
+    },
+    {
+      "location": "Emergency Vehicle with flashing lights",
+      "distance": "500 Feet",
+      "rule": "Do not follow closer than 500 ft"
+    }
+  ],
+  "lighting_and_signals": [
+    {
+      "requirement": "Headlights Required",
+      "rule": "Sunset to Sunrise, AND whenever wipers are in use, AND anytime visibility < 500 ft"
+    },
+    {
+      "requirement": "Dim High Beams (Approaching)",
+      "rule": "Within 500 Feet of oncoming traffic"
+    },
+    {
+      "requirement": "Dim High Beams (Following)",
+      "rule": "Within 200 Feet of vehicle ahead"
+    },
+    {
+      "requirement": "Turn Signal Distance",
+      "rule": "At least 100 Feet before turning or changing lanes"
+    },
+    {
+      "requirement": "Bicycle Clearance",
+      "rule": "At least 3 Feet passing buffer"
+    }
+  ],
+  "alcohol_and_teen_laws": [
+    {
+      "topic": "Adult BAC Limit (21+)",
+      "detail": "0.08% or higher is illegal (DUI)"
+    },
+    {
+      "topic": "Under 21 Zero Tolerance",
+      "detail": "0.02% to 0.08% BAC leads to 1-yr license suspension & $500 fine"
+    },
+    {
+      "topic": "Implied Consent Law",
+      "detail": "Refusal of breath test = immediate 7-day administrative suspension + 1-yr court revocation"
+    },
+    {
+      "topic": "Teen Curfew (under 18)",
+      "detail": "Midnight to 4:00 AM"
+    },
+    {
+      "topic": "Teen Cell Phone Ban",
+      "detail": "100% prohibited (both handheld & hands-free) for drivers under 18"
+    },
+    {
+      "topic": "Child Safety Seats",
+      "detail": "Required under age 8; rear-facing required until age 2"
+    }
+  ],
+  "sign_shapes_colors": [
+    {
+      "shape": "Octagon (8 sides)",
+      "meaning": "STOP only",
+      "color": "Red with white letters"
+    },
+    {
+      "shape": "Triangle (pointing down)",
+      "meaning": "YIELD only",
+      "color": "Red and white"
+    },
+    {
+      "shape": "Pentagon (5 sides)",
+      "meaning": "School Zone / School Crossing",
+      "color": "Fluorescent Yellow-Green"
+    },
+    {
+      "shape": "Pennant (pointing right)",
+      "meaning": "No Passing Zone",
+      "color": "Yellow with black letters (posted on left)"
+    },
+    {
+      "shape": "Round (Circle)",
+      "meaning": "Railroad Advance Warning",
+      "color": "Yellow with black RXR"
+    },
+    {
+      "shape": "Crossbuck (X)",
+      "meaning": "Railroad Crossing",
+      "color": "White with black letters"
+    },
+    {
+      "shape": "Diamond",
+      "meaning": "Warning / Hazard Ahead",
+      "color": "Yellow or Orange (Work Zone)"
+    },
+    {
+      "shape": "Vertical Rectangle",
+      "meaning": "Regulatory (Speed, lane rules)",
+      "color": "White with black letters"
+    },
+    {
+      "shape": "Horizontal Rectangle",
+      "meaning": "Guide / Direction / Information",
+      "color": "Green, Blue, Brown, or Red (Wrong Way)"
+    }
+  ]
+}

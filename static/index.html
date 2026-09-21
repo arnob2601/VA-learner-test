@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Virginia DMV Learner's Permit Exam Simulator</title>
+  
+  <!-- iPad and Mobile Viewport & PWA settings -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="VA DMV Permit">
+  <meta name="theme-color" content="#1565C0">
+  <meta name="description" content="100% Local Virginia DMV Knowledge Exam Simulator and Study Tools for iPad and Desktop.">
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" type="image/svg+xml" href="/icons/icon.svg">
+  <link rel="apple-touch-icon" href="/icons/icon.svg">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/kiosk.css">
+</head>
+<body class="theme-modern">
+
+  <!-- Top Navigation Header -->
+  <header class="top-nav">
+    <div class="top-nav-inner">
+      <div class="logo-group" onclick="window.app.switchScreen('screen-home')">
+        <div class="logo-badge">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7V12C2 17.52 6.24 22.5 12 24C17.76 22.5 22 17.52 22 12V7L12 2Z" fill="#FDB913"/>
+            <path d="M12 4.18L19.5 8V12C19.5 16.32 16.29 20.25 12 21.5C7.71 20.25 4.5 16.32 4.5 12V8L12 4.18Z" fill="#002B49"/>
+            <path d="M10 15.5L6.5 12L7.91 10.59L10 12.67L16.09 6.59L17.5 8L10 15.5Z" fill="#00E676"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <h1>VIRGINIA DMV</h1>
+          <span>Learner's Permit Exam Simulator</span>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <button id="btn-ipad-connect" class="btn btn-ipad-highlight" title="Connect iPad or mobile device via local network">
+          📱 <span>Connect iPad</span>
+        </button>
+        <button id="btn-audio-toggle" class="btn btn-secondary" title="Toggle audio question narration (simulating DMV oral exam)">
+          <span class="icon">🔈</span> <span class="label">Audio: OFF</span>
+        </button>
+        <button id="btn-theme-toggle" class="btn btn-outline" title="Switch Theme (Modern, DMV Kiosk, Dark)">
+          🎨 Theme
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Secondary Tab Bar -->
+  <nav class="sub-nav">
+    <div class="sub-nav-inner">
+      <button class="nav-link active" data-screen="screen-home">🏠 Dashboard</button>
+      <button class="nav-link" data-screen="screen-exam" onclick="window.examEngine.startDmvExam()">🏛️ DMV Real Exam</button>
+      <button class="nav-link" data-screen="screen-exam" onclick="window.examEngine.startPracticeExam()">📝 Practice Mode</button>
+      <button class="nav-link" data-screen="screen-flashcards">🗂️ Sign Flashcards</button>
+      <button class="nav-link" data-screen="screen-topics">🎯 Topic Quizzes</button>
+      <button class="nav-link" data-screen="screen-missed">❌ Missed (<span id="missed-total-badge">0</span>)</button>
+      <button class="nav-link" data-screen="screen-cheat-sheet">📋 Cheat Sheet</button>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+
+    <!-- SCREEN 1: Dashboard -->
+    <section id="screen-home" class="app-screen active">
+      <div class="hero-banner">
+        <div class="hero-content">
+          <h2>Master the Virginia DMV Knowledge Exam</h2>
+          <p>
+            Experience the authentic Virginia DMV computerized exam format. Part 1 requires 100% on Road Signs before unlocking Part 2 General Knowledge. 100% local, zero latency, ready for iPad.
+          </p>
+          <div class="hero-cta-row">
+            <button class="btn btn-primary btn-touch-large" onclick="window.examEngine.startDmvExam()">
+              🏛️ Start Official DMV Exam Simulation
+            </button>
+            <button class="btn btn-secondary btn-touch-large" onclick="window.examEngine.startPracticeExam()">
+              📝 Practice with Instant Explanations
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Readiness Meter -->
+      <div class="readiness-card">
+        <div class="readiness-header">
+          <div>
+            <h3>Overall Exam Readiness</h3>
+            <p class="text-muted">Calculated from your practice tests, sign mastery, and accuracy</p>
+          </div>
+          <div class="readiness-pct" id="dash-readiness-score">0%</div>
+        </div>
+        <div class="readiness-bar-bg">
+          <div class="readiness-bar-fill" id="dash-readiness-meter"></div>
+        </div>
+
+        <div class="dash-stats-grid">
+          <div class="dash-stat-box">
+            <div class="dash-stat-num" id="dash-tests-taken">0</div>
+            <div class="dash-stat-label">Tests Taken</div>
+          </div>
+          <div class="dash-stat-box">
+            <div class="dash-stat-num" id="dash-pass-rate">0%</div>
+            <div class="dash-stat-label">Pass Rate</div>
+          </div>
+          <div class="dash-stat-box">
+            <div class="dash-stat-num" id="dash-signs-mastered">0 / 38</div>
+            <div class="dash-stat-label">Signs Mastered</div>
+          </div>
+          <div class="dash-stat-box">
+            <div class="dash-stat-num" id="dash-missed-count">0</div>
+            <div class="dash-stat-label">Weak Spots</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Virginia DMV Exam Rules Notice -->
+      <div class="cheat-sheet-section">
+        <h3>Official Virginia DMV Exam Format & Rules</h3>
+        <p style="margin-bottom: 1rem; line-height: 1.5;">
+          The Virginia knowledge exam consists of 40 total questions divided into two strictly enforced sections:
+        </p>
+        <div class="cards-grid" style="margin-bottom: 0;">
+          <div class="feature-card" style="border-left: 6px solid #C62828;">
+            <h4>Section 1: Traffic Signs (10 Questions)</h4>
+            <p>
+              Tests sign shapes, colors, and meanings. <strong>Passing Requirement: 100% (10 out of 10).</strong> If you miss even one sign, the computerized kiosk immediately discontinues the test.
+            </p>
+          </div>
+          <div class="feature-card" style="border-left: 6px solid #2E7D32;">
+            <h4>Section 2: General Knowledge (30 Questions)</h4>
+            <p>
+              Covers traffic laws, following distances, speed limits, and DUI rules. <strong>Passing Requirement: 80% (24 out of 30).</strong> The test ends once you reach 24 correct or 7 incorrect.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Launch Study Cards -->
+      <h3 style="margin: 2rem 0 1rem 0; font-weight: 800;">Study & Drill Tools</h3>
+      <div class="cards-grid">
+        <div class="feature-card">
+          <div class="card-icon">🗂️</div>
+          <h3>Road Sign Flashcards</h3>
+          <p>Practice identifying all 38 Virginia traffic signs with 3D interactive flip cards, official definitions, and shape guides.</p>
+          <button class="btn btn-secondary" onclick="window.app.switchScreen('screen-flashcards')">Launch Flashcards →</button>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-icon">🎯</div>
+          <h3>Topic Mastery Quizzes</h3>
+          <p>Target specific challenge areas like the 2-3-4 second rule, parking distance limits, school buses, and teen curfew laws.</p>
+          <button class="btn btn-secondary" onclick="window.app.switchScreen('screen-topics')">Choose Topics →</button>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-icon">❌</div>
+          <h3>Missed Questions Bank</h3>
+          <p>Review every question you answered incorrectly across previous sessions. Drill them repeatedly until you achieve 100%.</p>
+          <button class="btn btn-secondary" onclick="window.app.switchScreen('screen-missed')">Review Weak Spots →</button>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-icon">📋</div>
+          <h3>Fast Numbers Cheat Sheet</h3>
+          <p>Quick-reference cheat sheet of every number tested on the Virginia exam: 15 ft hydrant, 20 ft crosswalk, 50 ft railroad, 100 ft signal.</p>
+          <button class="btn btn-secondary" onclick="window.app.switchScreen('screen-cheat-sheet')">Open Cheat Sheet →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 2: Exam / Quiz Runner -->
+    <section id="screen-exam" class="app-screen">
+      <div class="exam-container">
+        <!-- Exam Meta Bar -->
+        <div class="exam-meta-bar">
+          <div class="exam-title-group">
+            <span id="exam-mode-badge" class="badge badge-dmv">Official DMV Exam</span>
+            <h2 id="exam-title-display" style="margin-top: 0.25rem;">Virginia DMV Exam Simulator</h2>
+          </div>
+          <div class="exam-stats-group">
+            <span id="exam-timer" class="exam-timer">⏱️ 0:00</span>
+            <div class="exam-score-ticker">
+              <span>Correct: <strong id="exam-correct-count" class="score-tag-correct">0</strong></span>
+              <span>Wrong: <strong id="exam-incorrect-count" class="score-tag-incorrect">0</strong></span>
+            </div>
+          </div>
+          <div class="exam-progress-track">
+            <div id="exam-progress-fill" class="exam-progress-bar"></div>
+          </div>
+        </div>
+
+        <div id="exam-section-notice" class="exam-notice-banner" style="display:none;"></div>
+
+        <!-- Question Box Container -->
+        <div id="exam-question-box" class="question-card">
+          <!-- Dynamically populated by examEngine.renderQuestion() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 3: Exam Results -->
+    <section id="screen-exam-results" class="app-screen">
+      <div class="exam-container">
+        <div id="results-banner" class="results-banner">
+          <!-- Dynamically populated -->
+        </div>
+
+        <div id="results-score-card" class="results-score-card">
+          <!-- Dynamically populated -->
+        </div>
+
+        <div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+          <button class="btn btn-primary btn-touch-large" onclick="window.examEngine.startDmvExam()">
+            🔄 Retake DMV Exam
+          </button>
+          <button class="btn btn-secondary btn-touch-large" onclick="window.examEngine.startMissedQuestionsDrill()">
+            ❌ Drill Missed Questions
+          </button>
+          <button class="btn btn-outline btn-touch-large" onclick="window.app.switchScreen('screen-home')">
+            🏠 Return to Dashboard
+          </button>
+        </div>
+
+        <h3 style="margin-bottom: 1rem; font-weight: 800;">Detailed Question Review:</h3>
+        <div id="results-breakdown-list">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 4: Road Sign Flashcards & Gallery -->
+    <section id="screen-flashcards" class="app-screen">
+      <div class="flashcards-layout">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
+          <div>
+            <h2 style="font-weight: 800;">Virginia Road Signs & Signals</h2>
+            <p class="text-muted">Master all official road signs tested by the Virginia DMV</p>
+          </div>
+          <div style="display: flex; gap: 0.75rem; align-items: center;">
+            <input type="text" id="sign-search-input" placeholder="Search signs..." class="btn btn-outline" style="min-height: 40px; text-align: left; padding: 0.4rem 0.8rem;" oninput="window.signFlashcards.setSearch(this.value)">
+            <span id="flashcard-mastered-count" class="badge badge-warning" style="font-size: 0.9rem; padding: 0.4rem 0.8rem;">0 / 38 Mastered</span>
+          </div>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="category-filter-bar">
+          <button class="cat-filter-btn active" data-cat="all" onclick="window.signFlashcards.setCategory('all')">All Signs (38)</button>
+          <button class="cat-filter-btn" data-cat="regulatory" onclick="window.signFlashcards.setCategory('regulatory')">Regulatory (Red/White)</button>
+          <button class="cat-filter-btn" data-cat="warning" onclick="window.signFlashcards.setCategory('warning')">Warning (Yellow)</button>
+          <button class="cat-filter-btn" data-cat="school" onclick="window.signFlashcards.setCategory('school')">School (Pentagon)</button>
+          <button class="cat-filter-btn" data-cat="work_zone" onclick="window.signFlashcards.setCategory('work_zone')">Work Zone (Orange)</button>
+          <button class="cat-filter-btn" data-cat="railroad" onclick="window.signFlashcards.setCategory('railroad')">Railroad</button>
+        </div>
+
+        <!-- 3D Flip Card Container -->
+        <div id="flashcard-container">
+          <!-- Dynamically populated -->
+        </div>
+
+        <!-- Sign Visual Grid Gallery -->
+        <h3 style="margin-top: 3rem; font-weight: 800;">Road Sign Visual Catalog</h3>
+        <p class="text-muted">Tap any sign to load into the flashcard trainer above</p>
+        <div id="signs-gallery-grid" class="gallery-grid">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 5: Topic Quizzes -->
+    <section id="screen-topics" class="app-screen">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <h2 style="font-weight: 800; margin-bottom: 0.5rem;">Topic-Specific Practice Quizzes</h2>
+        <p class="text-muted" style="margin-bottom: 2rem;">Focus your studying on key subject areas of the Virginia Driver's Manual.</p>
+
+        <div class="cards-grid">
+          <div class="feature-card">
+            <h3>🛑 Road Signs & Signals</h3>
+            <p>Test identifying road signs by shape, color, and action rules. (Part 1 practice)</p>
+            <button class="btn btn-primary" onclick="window.examEngine.startTopicQuiz('Road Signs & Signals')">Start Signs Quiz →</button>
+          </div>
+
+          <div class="feature-card">
+            <h3>⏱️ Speed Limits & Following Distance</h3>
+            <p>The 2-, 3-, and 4-second rule, statutory speed limits (25, 35, 55 mph), and Virginia reckless driving thresholds.</p>
+            <button class="btn btn-primary" onclick="window.examEngine.startTopicQuiz('Following Distance & Stopping')">Start Distance Quiz →</button>
+          </div>
+
+          <div class="feature-card">
+            <h3>🛑 Right-of-Way & Intersections</h3>
+            <p>4-way stops, uncontrolled intersections, roundabouts, green arrows, right turn on red, and funeral processions.</p>
+            <button class="btn btn-primary" onclick="window.examEngine.startTopicQuiz('Right of Way & Intersections')">Start Right-of-Way Quiz →</button>
+          </div>
+
+          <div class="feature-card">
+            <h3>🚌 School Buses & Move Over Law</h3>
+            <p>Mandatory stopping for school buses with flashing red lights, physical median rules, and Virginia Move Over law.</p>
+            <button class="btn btn-primary" onclick="window.examEngine.startTopicQuiz('School Buses')">Start School Bus Quiz →</button>
+          </div>
+
+          <div class="feature-card">
+            <h3>💡 Headlights, Wipers & Hand Signals</h3>
+            <p>Sunset to sunrise, wipers on, 500 ft visibility, high beam dimming (500 ft / 200 ft), and arm turn signals.</p>
+            <button class="btn btn-primary" onclick="window.examEngine.startTopicQuiz('Headlights & Lighting Laws')">Start Lighting Quiz →</button>
+          </div>
+
+          <div class="feature-card">
+            <h3>🅿️ Parking Distances & Hill Parking</h3>
+            <p>Distance from fire hydrants (15 ft), crosswalks (20 ft), railroads (50 ft), and steering wheels with/without curb.</p>
+            <button class="btn btn-primary" onclick="window.examEngine.startTopicQuiz('Parking Distances & Rules')">Start Parking Quiz →</button>
+          </div>
+
+          <div class="feature-card">
+            <h3>🍷 Virginia DUI & Zero Tolerance Laws</h3>
+            <p>BAC 0.08%, under-21 0.02% Zero Tolerance, Implied Consent breath test refusal suspension, and penalties.</p>
+            <button class="btn btn-primary" onclick="window.examEngine.startTopicQuiz('Alcohol, Drugs & Virginia DUI Laws')">Start DUI Quiz →</button>
+          </div>
+
+          <div class="feature-card">
+            <h3>📱 Teen Curfew & Cell Phone Bans</h3>
+            <p>Midnight-4 AM curfew, passenger restrictions (1 non-family passenger under 21), and the complete cell phone ban.</p>
+            <button class="btn btn-primary" onclick="window.examEngine.startTopicQuiz('Teen Driving Laws & Learner\'s Permit Rules')">Start Teen Rules Quiz →</button>
+          </div>
+
+          <div class="feature-card">
+            <h3>🌧️ Hydroplaning & Hazardous Weather</h3>
+            <p>Skid recovery, 35 MPH hydroplaning, freezing bridge decks, brake blowout recovery, and stuck gas pedal steps.</p>
+            <button class="btn btn-primary" onclick="window.examEngine.startTopicQuiz('Weather, Emergencies & Hazardous Driving')">Start Weather Quiz →</button>
+          </div>
+
+          <div class="feature-card">
+            <h3>🚴 Sharing the Road & Blind Spots</h3>
+            <p>3-foot bicycle passing clearance, truck 'No-Zone' blind spots, and extra buffer for motorcycles.</p>
+            <button class="btn btn-primary" onclick="window.examEngine.startTopicQuiz('Sharing the Road')">Start Sharing Road Quiz →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 6: Missed Questions -->
+    <section id="screen-missed" class="app-screen">
+      <div style="max-width: 860px; margin: 0 auto;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 0.75rem;">
+          <div>
+            <h2 style="font-weight: 800;">Missed Questions Bank</h2>
+            <p class="text-muted">Review and drill questions you have previously missed</p>
+          </div>
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="btn btn-primary btn-touch-large" onclick="window.examEngine.startMissedQuestionsDrill()">
+              🎯 Drill All Missed Questions
+            </button>
+            <button class="btn btn-outline" onclick="if(confirm('Clear all stored missed questions?')) window.app.clearAllMissedQuestions()">
+              🗑️ Clear
+            </button>
+          </div>
+        </div>
+
+        <div id="missed-empty-state" class="readiness-card" style="text-align: center; padding: 3rem 1.5rem; display:none;">
+          <div style="font-size: 3rem; margin-bottom: 0.75rem;">🎉</div>
+          <h3>Zero Missed Questions!</h3>
+          <p class="text-muted" style="margin-bottom: 1.5rem;">You have answered all questions correctly or haven't taken an exam yet.</p>
+          <button class="btn btn-primary" onclick="window.examEngine.startDmvExam()">Take DMV Exam Now</button>
+        </div>
+
+        <div id="missed-questions-list">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 7: Cheat Sheet -->
+    <section id="screen-cheat-sheet" class="app-screen">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <div style="margin-bottom: 1.5rem;">
+          <h2 style="font-weight: 800;">Virginia Driver's Manual Cheat Sheet</h2>
+          <p class="text-muted">Key numbers, distances, laws, and sign rules tested by the Virginia DMV.</p>
+        </div>
+
+        <div id="cheat-sheet-content">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL: Connect iPad / Network Info -->
+  <div id="modal-ipad-connect" class="modal-overlay" onclick="if(event.target===this) window.app.closeIpadModal()">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">📱 Connect iPad / Tablet</h3>
+        <button class="modal-close-btn" onclick="window.app.closeIpadModal()">&times;</button>
+      </div>
+
+      <div class="ipad-qr-container">
+        <div class="qr-code-box">
+          <img id="ipad-qr-code-img" src="/api/qr.svg" alt="iPad Connect QR Code">
+        </div>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+          Point your iPad Camera at the code above to open immediately:
+        </p>
+        <div>
+          <span id="ipad-network-url" class="network-url-pill">http://...</span>
+        </div>
+        <button id="btn-copy-url" class="btn btn-sm btn-secondary" onclick="window.app.copyIpadUrl()">
+          📋 Copy URL
+        </button>
+      </div>
+
+      <ol class="ipad-steps-list">
+        <li>Make sure your iPad is connected to the <strong>same Wi-Fi network</strong> as this computer.</li>
+        <li>Open the <strong>Camera app</strong> on your iPad and aim it at the QR code.</li>
+        <li>Tap the yellow <strong>"Open in Safari"</strong> link that pops up.</li>
+        <li><em>Pro-tip for authentic exam feel:</em> In Safari, tap the <strong>Share</strong> button and choose <strong>"Add to Home Screen"</strong>. It launches in full-screen mode just like the real DMV touch kiosk!</li>
+      </ol>
+
+      <div style="text-align: right;">
+        <button class="btn btn-primary" onclick="window.app.closeIpadModal()">Got It!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/speech.js"></script>
+  <script src="/js/flashcards.js"></script>
+  <script src="/js/exam.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

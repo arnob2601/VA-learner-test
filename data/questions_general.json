@@ -1,0 +1,977 @@
+[
+  {
+    "id": "gq1",
+    "category": "Speed Limits & Reckless Driving",
+    "question": "Unless otherwise posted, what is the maximum speed limit on unpaved secondary roads in Virginia?",
+    "options": [
+      "25 MPH",
+      "35 MPH",
+      "45 MPH",
+      "55 MPH"
+    ],
+    "answerIndex": 1,
+    "explanation": "In Virginia, the statutory speed limit on unpaved roads is 35 MPH unless a different speed is posted."
+  },
+  {
+    "id": "gq2",
+    "category": "Speed Limits & Reckless Driving",
+    "question": "Under Virginia law, driving at or above which speed is automatically considered reckless driving, regardless of the posted limit?",
+    "options": [
+      "75 MPH",
+      "80 MPH",
+      "85 MPH",
+      "90 MPH"
+    ],
+    "answerIndex": 2,
+    "explanation": "In Virginia, driving faster than 85 MPH\u2014regardless of the posted speed limit\u2014or driving 20 MPH or more over the speed limit is classified as Reckless Driving, a Class 1 misdemeanor."
+  },
+  {
+    "id": "gq3",
+    "category": "Speed Limits & Reckless Driving",
+    "question": "Driving 20 MPH or more over the posted speed limit in Virginia is considered:",
+    "options": [
+      "A standard civil traffic infraction with no points.",
+      "Reckless Driving, which is a criminal misdemeanor.",
+      "A warning offense for first-time drivers.",
+      "An automatic 1-year jail sentence."
+    ],
+    "answerIndex": 1,
+    "explanation": "Exceeding the posted speed limit by 20 MPH or more is Reckless Driving under Virginia law, carrying criminal misdemeanor penalties."
+  },
+  {
+    "id": "gq4",
+    "category": "Speed Limits & Reckless Driving",
+    "question": "What is the statutory speed limit in Virginia school zones when flashing warning lights are active?",
+    "options": [
+      "15 MPH",
+      "25 MPH (or as posted)",
+      "30 MPH",
+      "35 MPH"
+    ],
+    "answerIndex": 1,
+    "explanation": "The maximum speed in school zones during indicated hours or when lights are flashing is 25 MPH unless a lower limit is specifically posted."
+  },
+  {
+    "id": "gq5",
+    "category": "Following Distance & Stopping",
+    "question": "According to the Virginia Driver's Manual, what following distance should you maintain at speeds under 35 MPH on dry pavement?",
+    "options": [
+      "At least 1 second",
+      "At least 2 seconds",
+      "At least 4 seconds",
+      "At least 6 seconds"
+    ],
+    "answerIndex": 1,
+    "explanation": "Virginia uses the 2-, 3-, and 4-Second Rule: maintain at least 2 seconds following distance at speeds under 35 MPH."
+  },
+  {
+    "id": "gq6",
+    "category": "Following Distance & Stopping",
+    "question": "Under the Virginia 2-, 3-, and 4-Second Rule, what following distance is required for speeds between 35 and 45 MPH?",
+    "options": [
+      "2 seconds",
+      "3 seconds",
+      "4 seconds",
+      "5 seconds"
+    ],
+    "answerIndex": 1,
+    "explanation": "At speeds between 35 and 45 MPH on dry roads, you should allow a minimum of 3 seconds following distance."
+  },
+  {
+    "id": "gq7",
+    "category": "Following Distance & Stopping",
+    "question": "What following distance is recommended by Virginia DMV for speeds from 46 to 70 MPH?",
+    "options": [
+      "2 seconds",
+      "3 seconds",
+      "At least 4 seconds",
+      "5 seconds"
+    ],
+    "answerIndex": 2,
+    "explanation": "At higher speeds between 46 and 70 MPH, you should allow at least 4 seconds following distance."
+  },
+  {
+    "id": "gq8",
+    "category": "Following Distance & Stopping",
+    "question": "How do you measure following distance using the seconds rule?",
+    "options": [
+      "Count your car lengths from the car in front.",
+      "Pick a fixed landmark ahead; when the vehicle ahead passes it, count seconds until you reach the same landmark.",
+      "Watch your odometer while maintaining pace.",
+      "Calculate your stopping distance in feet divided by 10."
+    ],
+    "answerIndex": 1,
+    "explanation": "Choose a stationary object (sign, overpass, tree). When the vehicle ahead passes it, count 'one-thousand-one, one-thousand-two...' You should not reach that object before finishing the required seconds."
+  },
+  {
+    "id": "gq9",
+    "category": "Following Distance & Stopping",
+    "question": "When following large trucks or commercial buses, why should you increase your following distance?",
+    "options": [
+      "Trucks always drive slower than the speed limit.",
+      "To see around the truck and allow the truck driver to see you in their side mirrors.",
+      "Trucks cannot make right turns.",
+      "To draft behind the truck and save fuel."
+    ],
+    "answerIndex": 1,
+    "explanation": "Increasing following distance behind large trucks ensures you stay out of their rear blind spot ('No-Zone') and gives you a clear view of the road ahead."
+  },
+  {
+    "id": "gq10",
+    "category": "Right of Way & Intersections",
+    "question": "When two vehicles arrive at a 4-way stop at the exact same time, which driver has the right-of-way?",
+    "options": [
+      "The driver on the left has the right-of-way.",
+      "The driver on the right has the right-of-way.",
+      "The larger vehicle always goes first.",
+      "The driver intending to turn left has priority."
+    ],
+    "answerIndex": 1,
+    "explanation": "When two vehicles arrive simultaneously at an all-way stop or uncontrolled intersection, the driver on the left must yield to the driver on the right."
+  },
+  {
+    "id": "gq11",
+    "category": "Right of Way & Intersections",
+    "question": "At an uncontrolled intersection (no signs or signals), who must you yield to?",
+    "options": [
+      "Yield to any vehicle already in the intersection and vehicles approaching from your right.",
+      "Yield only to vehicles moving faster than you.",
+      "You never have to yield if you are going straight.",
+      "Yield only to commercial delivery trucks."
+    ],
+    "answerIndex": 0,
+    "explanation": "At uncontrolled intersections, you must yield to traffic already in the intersection and to vehicles on your right."
+  },
+  {
+    "id": "gq12",
+    "category": "Right of Way & Intersections",
+    "question": "When making a left turn at a green traffic light (solid green circle), what must you do?",
+    "options": [
+      "You have automatic right-of-way over oncoming vehicles.",
+      "Yield to oncoming traffic and pedestrians before completing the turn.",
+      "Honk your horn and turn immediately.",
+      "Wait for the light to turn red before completing the turn."
+    ],
+    "answerIndex": 1,
+    "explanation": "A solid green light gives you permission to turn left only after yielding to oncoming vehicles moving straight or turning right, as well as pedestrians in the crosswalk."
+  },
+  {
+    "id": "gq13",
+    "category": "Right of Way & Intersections",
+    "question": "What does a flashing yellow traffic arrow mean for drivers turning left?",
+    "options": [
+      "Stop and wait for a green arrow.",
+      "Turns are allowed, but you must yield to oncoming traffic and pedestrians.",
+      "You have protected right-of-way; oncoming traffic must stop.",
+      "The traffic light is out of order."
+    ],
+    "answerIndex": 1,
+    "explanation": "A flashing yellow arrow means left turns are permitted, but oncoming traffic has a green light. You must yield before turning."
+  },
+  {
+    "id": "gq14",
+    "category": "Right of Way & Intersections",
+    "question": "In Virginia, can you make a right turn on red?",
+    "options": [
+      "No, right turns on red are never legal in Virginia.",
+      "Yes, after coming to a complete stop and yielding to traffic and pedestrians, unless a 'No Turn On Red' sign is posted.",
+      "Yes, without stopping if the cross street is empty.",
+      "Only between sunrise and sunset."
+    ],
+    "answerIndex": 1,
+    "explanation": "You may turn right on red in Virginia only after coming to a COMPLETE stop and yielding to all traffic and pedestrians, provided no sign prohibits the turn."
+  },
+  {
+    "id": "gq15",
+    "category": "Right of Way & Intersections",
+    "question": "Can you legally turn left on red in Virginia?",
+    "options": [
+      "Never under any circumstances.",
+      "Only from a one-way street onto another one-way street, after coming to a complete stop and yielding.",
+      "At any intersection as long as cross traffic is clear.",
+      "Only on Sundays and holidays."
+    ],
+    "answerIndex": 1,
+    "explanation": "In Virginia, left turns on red are permitted ONLY when turning from a one-way street onto another one-way street, after coming to a full stop and yielding."
+  },
+  {
+    "id": "gq16",
+    "category": "Right of Way & Intersections",
+    "question": "When approaching a roundabout, who has the right-of-way?",
+    "options": [
+      "Vehicles entering the roundabout.",
+      "Vehicles already circulating inside the roundabout.",
+      "The vehicle driving at the highest speed.",
+      "Vehicles entering from the left."
+    ],
+    "answerIndex": 1,
+    "explanation": "Traffic already circulating inside the roundabout has right-of-way. Entering traffic must yield before joining the circle."
+  },
+  {
+    "id": "gq17",
+    "category": "Right of Way & Intersections",
+    "question": "What must drivers do regarding funeral processions in Virginia?",
+    "options": [
+      "Funeral processions must yield to all standard traffic.",
+      "Funeral processions have the right-of-way; other drivers must not cut through or join the procession.",
+      "Pass the procession on the right shoulder.",
+      "Sound your horn as you pass."
+    ],
+    "answerIndex": 1,
+    "explanation": "Virginia law grants funeral processions the right-of-way. It is illegal to join, cut through, or pass a funeral procession."
+  },
+  {
+    "id": "gq18",
+    "category": "School Buses",
+    "question": "When approaching a stopped school bus with flashing red lights and an extended stop sign on an undivided roadway, what must you do?",
+    "options": [
+      "Only traffic traveling behind the bus must stop.",
+      "Drivers approaching from either direction must stop and remain stopped until children are clear and the bus resumes motion.",
+      "Slow down to 10 MPH and pass cautiously.",
+      "Stop only if children are actively in the roadway."
+    ],
+    "answerIndex": 1,
+    "explanation": "On any undivided road, drivers traveling in BOTH directions must stop for a school bus with flashing red lights and extended stop arm."
+  },
+  {
+    "id": "gq19",
+    "category": "School Buses",
+    "question": "When are you NOT required to stop for a stopped school bus with flashing red lights?",
+    "options": [
+      "When driving in the opposite direction on a roadway separated by a physical median or unpaved barrier.",
+      "When traveling on any 4-lane highway.",
+      "When there are double yellow lines separating lanes.",
+      "When the speed limit is 45 MPH or higher."
+    ],
+    "answerIndex": 0,
+    "explanation": "You do not need to stop if you are traveling in the opposite direction on a divided highway separated by a physical barrier or unpaved median."
+  },
+  {
+    "id": "gq20",
+    "category": "School Buses",
+    "question": "Does a continuous painted turn lane count as a physical barrier exempting you from stopping for a school bus?",
+    "options": [
+      "Yes, any painted lane is considered a barrier.",
+      "No, only a physical median barrier or unpaved space exempts opposite-direction traffic.",
+      "Yes, if the turn lane is wider than 10 feet.",
+      "Yes, between the hours of 8 AM and 3 PM."
+    ],
+    "answerIndex": 1,
+    "explanation": "A painted median or center turn lane is NOT a physical barrier. All lanes in both directions must stop."
+  },
+  {
+    "id": "gq21",
+    "category": "Move Over Law & Emergency Vehicles",
+    "question": "What does Virginia's 'Move Over' law require you to do when approaching stationary emergency vehicles with flashing lights?",
+    "options": [
+      "Maintain speed and sound your horn.",
+      "Change into an adjacent lane not next to the emergency vehicle if safe, or slow down with caution.",
+      "Come to a dead stop in your travel lane.",
+      "Accelerate past the emergency vehicle quickly."
+    ],
+    "answerIndex": 1,
+    "explanation": "Virginia's Move Over law requires drivers on multi-lane highways to move over at least one lane away from stopped emergency/utility/hazard vehicles, or slow down significantly if changing lanes is unsafe."
+  },
+  {
+    "id": "gq22",
+    "category": "Move Over Law & Emergency Vehicles",
+    "question": "What must you do when an emergency vehicle with flashing red/blue lights and sirens approaches you from behind?",
+    "options": [
+      "Speed up to reach the nearest exit.",
+      "Immediately pull over to the right edge of the road, clear of any intersection, and stop until it passes.",
+      "Stop immediately in the middle of your lane.",
+      "Move onto the left shoulder and stop."
+    ],
+    "answerIndex": 1,
+    "explanation": "Yield right-of-way by immediately driving to the right edge of the road, stopping clear of intersections, until emergency vehicles have passed."
+  },
+  {
+    "id": "gq23",
+    "category": "Headlights & Lighting Laws",
+    "question": "Virginia law requires you to use your headlights:",
+    "options": [
+      "From sunset to sunrise, whenever wipers are in use, and when visibility is reduced to 500 feet or less.",
+      "Only between 9 PM and 5 AM.",
+      "Only on dark rural highways.",
+      "Only when driving in snow or heavy fog."
+    ],
+    "answerIndex": 0,
+    "explanation": "Virginia requires headlights from sunset to sunrise, whenever windshield wipers are in use (rain, fog, snow, sleet), and whenever visibility is reduced to 500 feet or less."
+  },
+  {
+    "id": "gq24",
+    "category": "Headlights & Lighting Laws",
+    "question": "When driving at night, when must you dim your high beams for oncoming vehicles in Virginia?",
+    "options": [
+      "Within 200 feet of an oncoming vehicle.",
+      "Within 500 feet of an oncoming vehicle.",
+      "Within 1,000 feet of an oncoming vehicle.",
+      "Only when the oncoming driver flashes their lights."
+    ],
+    "answerIndex": 1,
+    "explanation": "Virginia law requires dimming your high beams whenever you come within 500 feet of an oncoming vehicle."
+  },
+  {
+    "id": "gq25",
+    "category": "Headlights & Lighting Laws",
+    "question": "When following another vehicle from behind at night, when must you dim your high beams?",
+    "options": [
+      "Within 100 feet.",
+      "Within 200 feet.",
+      "Within 400 feet.",
+      "Within 500 feet."
+    ],
+    "answerIndex": 1,
+    "explanation": "Virginia law requires dimming high beams when within 200 feet of the vehicle you are following."
+  },
+  {
+    "id": "gq26",
+    "category": "Headlights & Lighting Laws",
+    "question": "When driving in dense fog or heavy snow, which headlights should you use?",
+    "options": [
+      "High beam headlights for maximum penetration.",
+      "Low beam headlights (or fog lights), because high beams reflect off water droplets back into your eyes.",
+      "Parking lights only.",
+      "Emergency hazard flashers only."
+    ],
+    "answerIndex": 1,
+    "explanation": "Use low beams in fog, rain, or snow. High beams reflect off droplets/crystals and create blinding glare."
+  },
+  {
+    "id": "gq27",
+    "category": "Turn Signals & Hand Signals",
+    "question": "In Virginia, how many feet before making a turn or lane change must you signal your intention?",
+    "options": [
+      "At least 25 feet",
+      "At least 50 feet",
+      "At least 100 feet",
+      "At least 200 feet"
+    ],
+    "answerIndex": 2,
+    "explanation": "Virginia law requires signaling your intention to turn or change lanes at least 100 feet ahead."
+  },
+  {
+    "id": "gq28",
+    "category": "Turn Signals & Hand Signals",
+    "question": "What is the proper hand signal for a LEFT turn?",
+    "options": [
+      "Left arm extended straight out horizontally.",
+      "Left arm bent upward at 90 degrees.",
+      "Left arm bent downward at 90 degrees.",
+      "Right arm pointed across the dashboard."
+    ],
+    "answerIndex": 0,
+    "explanation": "To signal a left turn with hand signals, extend your left arm and hand straight out horizontally."
+  },
+  {
+    "id": "gq29",
+    "category": "Turn Signals & Hand Signals",
+    "question": "What is the hand signal for a RIGHT turn?",
+    "options": [
+      "Left arm extended straight out.",
+      "Left arm bent upward at a 90-degree angle.",
+      "Left arm bent downward at a 90-degree angle.",
+      "Right hand waving out the passenger window."
+    ],
+    "answerIndex": 1,
+    "explanation": "To signal a right turn, hold your left arm out and bent upwards at a 90-degree angle."
+  },
+  {
+    "id": "gq30",
+    "category": "Turn Signals & Hand Signals",
+    "question": "What is the hand signal to indicate you are SLOWING DOWN or STOPPING?",
+    "options": [
+      "Left arm extended straight out.",
+      "Left arm bent upward at 90 degrees.",
+      "Left arm bent downward at a 90-degree angle with palm facing rear.",
+      "Pointing down toward the ground with your index finger."
+    ],
+    "answerIndex": 2,
+    "explanation": "To signal slow down or stop, hold your left arm out and bent downwards at a 90-degree angle with your palm facing rearward."
+  },
+  {
+    "id": "gq31",
+    "category": "Parking Distances & Rules",
+    "question": "In Virginia, you may NOT park within how many feet of a fire hydrant?",
+    "options": [
+      "10 feet",
+      "15 feet",
+      "20 feet",
+      "25 feet"
+    ],
+    "answerIndex": 1,
+    "explanation": "You may not park within 15 feet of any fire hydrant to ensure emergency fire crews have immediate unobstructed access."
+  },
+  {
+    "id": "gq32",
+    "category": "Parking Distances & Rules",
+    "question": "You may NOT park within how many feet of an intersection or crosswalk?",
+    "options": [
+      "10 feet",
+      "15 feet",
+      "20 feet",
+      "30 feet"
+    ],
+    "answerIndex": 2,
+    "explanation": "You may not park within 20 feet of an intersection or marked crosswalk so that visibility for pedestrians and approaching drivers is maintained."
+  },
+  {
+    "id": "gq33",
+    "category": "Parking Distances & Rules",
+    "question": "In Virginia, you may NOT park within how many feet of a railroad crossing?",
+    "options": [
+      "20 feet",
+      "30 feet",
+      "50 feet",
+      "100 feet"
+    ],
+    "answerIndex": 2,
+    "explanation": "Parking is prohibited within 50 feet of the nearest rail of a railroad crossing."
+  },
+  {
+    "id": "gq34",
+    "category": "Parking Distances & Rules",
+    "question": "When parking downhill on a two-way street WITH a curb, which way should you turn your front wheels?",
+    "options": [
+      "Turn wheels away from the curb (to the left).",
+      "Turn wheels toward the curb (to the right).",
+      "Keep wheels pointing straight ahead.",
+      "It does not matter if the parking brake is set."
+    ],
+    "answerIndex": 1,
+    "explanation": "When parking downhill with a curb, turn wheels toward the curb (to the right) so if brakes fail, the car rolls into the curb."
+  },
+  {
+    "id": "gq35",
+    "category": "Parking Distances & Rules",
+    "question": "When parking UPHILL on a street WITH a curb, which direction should you turn your wheels?",
+    "options": [
+      "Turn wheels toward the curb (to the right).",
+      "Turn wheels away from the curb (to the left) so the back of the front tire rests against the curb.",
+      "Keep wheels pointing straight.",
+      "Turn wheels to the right into the roadway."
+    ],
+    "answerIndex": 1,
+    "explanation": "When parking uphill WITH a curb, turn your front wheels away from the curb (to the left) and let the vehicle roll back gently until the tire touches the curb."
+  },
+  {
+    "id": "gq36",
+    "category": "Parking Distances & Rules",
+    "question": "When parking on a hill (uphill or downhill) WITHOUT a curb, how should your wheels be turned?",
+    "options": [
+      "Toward the center of the road.",
+      "Toward the edge of the road (to the right).",
+      "Straight ahead.",
+      "Toward the oncoming lane."
+    ],
+    "answerIndex": 1,
+    "explanation": "Without a curb, always turn your wheels toward the edge of the road (to the right) so the vehicle rolls off the roadway rather than into traffic."
+  },
+  {
+    "id": "gq37",
+    "category": "Alcohol, Drugs & Virginia DUI Laws",
+    "question": "In Virginia, what is the legal Blood Alcohol Concentration (BAC) limit for drivers age 21 and older?",
+    "options": [
+      "0.04%",
+      "0.05%",
+      "0.08%",
+      "0.10%"
+    ],
+    "answerIndex": 2,
+    "explanation": "Drivers age 21 and older are legally considered driving under the influence (DUI) at a BAC of 0.08% or higher."
+  },
+  {
+    "id": "gq38",
+    "category": "Alcohol, Drugs & Virginia DUI Laws",
+    "question": "Under Virginia's 'Zero Tolerance' law for drivers UNDER age 21, what BAC can result in criminal DUI penalties and license suspension?",
+    "options": [
+      "0.02% or higher",
+      "0.05% or higher",
+      "0.08% or higher",
+      "0.10% or higher"
+    ],
+    "answerIndex": 0,
+    "explanation": "Under Virginia's Zero Tolerance law, anyone under age 21 operating a motor vehicle with a BAC of 0.02% to less than 0.08% faces driver's license suspension for one year, minimum $500 fine, or 50 hours of community service."
+  },
+  {
+    "id": "gq39",
+    "category": "Alcohol, Drugs & Virginia DUI Laws",
+    "question": "What does Virginia's 'Implied Consent' law mean?",
+    "options": [
+      "You give consent for police to search your trunk at any time.",
+      "By driving on Virginia roads, you agree to take a chemical test (breath or blood) if arrested for suspected DUI.",
+      "You consent to automatic vehicle impoundment upon any speeding ticket.",
+      "You agree to purchase commercial auto insurance."
+    ],
+    "answerIndex": 1,
+    "explanation": "Implied Consent means that by operating a motor vehicle in Virginia, you agree to submit to a chemical test if suspected of DUI. Refusal results in an immediate automatic 7-day administrative license suspension plus court penalties."
+  },
+  {
+    "id": "gq40",
+    "category": "Alcohol, Drugs & Virginia DUI Laws",
+    "question": "If you refuse a chemical breath or blood test after being arrested for DUI in Virginia for the first time, your driver's license will be immediately suspended for:",
+    "options": [
+      "24 hours",
+      "7 days by the magistrate, and 1 year by the court upon conviction of unreasonable refusal",
+      "30 days",
+      "90 days"
+    ],
+    "answerIndex": 1,
+    "explanation": "Under Virginia law, unreasonable refusal of a breath test results in an immediate 7-day administrative suspension, and the court will suspend your license for 1 full year upon conviction."
+  },
+  {
+    "id": "gq41",
+    "category": "Alcohol, Drugs & Virginia DUI Laws",
+    "question": "What is the only effective way to sober up and remove alcohol from your body?",
+    "options": [
+      "Drinking several cups of strong black coffee",
+      "Taking a cold shower",
+      "Giving your body sufficient time to metabolize the alcohol",
+      "Vigorous physical exercise"
+    ],
+    "answerIndex": 2,
+    "explanation": "Only time metabolizes alcohol. Coffee, cold showers, and exercise do not reduce blood alcohol concentration."
+  },
+  {
+    "id": "gq42",
+    "category": "Teen Driving Laws & Learner's Permit Rules",
+    "question": "Under Virginia law, what curfew applies to drivers under age 18?",
+    "options": [
+      "10:00 PM to 6:00 AM",
+      "11:00 PM to 5:00 AM",
+      "Midnight to 4:00 AM",
+      "1:00 AM to 5:00 AM"
+    ],
+    "answerIndex": 2,
+    "explanation": "Virginia law prohibits licensed drivers under age 18 from driving between Midnight and 4:00 AM, with narrow exceptions for work, school events, or medical emergencies."
+  },
+  {
+    "id": "gq43",
+    "category": "Teen Driving Laws & Learner's Permit Rules",
+    "question": "While driving with a Virginia learner's permit, who must accompany you in the front passenger seat?",
+    "options": [
+      "Any friend who is at least 18 years old.",
+      "A licensed driver who is at least 21 years old (or an immediate family member who is a licensed driver at least 18 years old).",
+      "Any licensed driver regardless of age.",
+      "Nobody, if driving during daylight hours."
+    ],
+    "answerIndex": 1,
+    "explanation": "A permit holder must be accompanied by a licensed driver who is at least 21 years old, or an immediate family member who is at least 18 years old and licensed."
+  },
+  {
+    "id": "gq44",
+    "category": "Teen Driving Laws & Learner's Permit Rules",
+    "question": "How many non-family passengers under age 21 may a Virginia driver under 18 carry during their first year of licensure?",
+    "options": [
+      "Only one non-family passenger",
+      "Up to two passengers",
+      "Up to three passengers",
+      "No restrictions if everyone wears a seat belt"
+    ],
+    "answerIndex": 0,
+    "explanation": "Virginia passenger restriction allows drivers under 18 to transport only ONE non-family passenger under age 21 for the first year of having a license."
+  },
+  {
+    "id": "gq45",
+    "category": "Teen Driving Laws & Learner's Permit Rules",
+    "question": "Under Virginia law, what is the rule on cell phone usage for drivers under age 18?",
+    "options": [
+      "Hands-free calling is allowed, but texting is banned.",
+      "All cell phone use (both handheld AND hands-free) is strictly prohibited while driving, except in emergencies.",
+      "Cell phones may be used when stopped at red lights.",
+      "Only GPS navigation apps are allowed."
+    ],
+    "answerIndex": 1,
+    "explanation": "Virginia law completely bans any cell phone use (handheld or hands-free) for drivers under age 18 while operating a vehicle, except for a genuine emergency."
+  },
+  {
+    "id": "gq46",
+    "category": "Teen Driving Laws & Learner's Permit Rules",
+    "question": "If you fail the Virginia learner's permit knowledge test 3 times, what must you do before you can test again?",
+    "options": [
+      "Wait 6 months.",
+      "Complete the classroom portion of a Virginia-approved driver education program.",
+      "Pay a $250 penalty fee.",
+      "Submit a formal appeal to the DMV Commissioner."
+    ],
+    "answerIndex": 1,
+    "explanation": "Under Virginia's 3-Failure Rule, if you fail the knowledge test 3 times, you must complete the classroom component of driver education before you are permitted to test a fourth time."
+  },
+  {
+    "id": "gq47",
+    "category": "Seat Belts & Child Safety Seats",
+    "question": "Under Virginia law, who is legally required to wear a seat belt in a passenger vehicle?",
+    "options": [
+      "Only the driver.",
+      "The driver and all front-seat passengers, as well as anyone under age 18 anywhere in the vehicle.",
+      "Only passengers seated in the rear.",
+      "Only occupants under age 21."
+    ],
+    "answerIndex": 1,
+    "explanation": "Virginia law requires the driver, all front-seat occupants, and all passengers under age 18 (regardless of seating position) to wear properly secured safety belts."
+  },
+  {
+    "id": "gq48",
+    "category": "Seat Belts & Child Safety Seats",
+    "question": "In Virginia, children must be secured in an approved child safety seat or booster seat until what age?",
+    "options": [
+      "Age 4",
+      "Age 6",
+      "Age 8",
+      "Age 10"
+    ],
+    "answerIndex": 2,
+    "explanation": "Virginia law requires all children under age 8 to be properly secured in an approved child safety seat or booster seat."
+  },
+  {
+    "id": "gq49",
+    "category": "Seat Belts & Child Safety Seats",
+    "question": "Under Virginia law, until what age must infants be secured in a REAR-FACING child restraint seat?",
+    "options": [
+      "Until at least age 1",
+      "Until at least age 2",
+      "Until age 4",
+      "Until weight exceeds 20 pounds"
+    ],
+    "answerIndex": 1,
+    "explanation": "Virginia law requires children under age 2 to ride in a rear-facing child restraint seat unless the child meets minimum weight requirements approved by the manufacturer."
+  },
+  {
+    "id": "gq50",
+    "category": "Weather, Emergencies & Hazardous Driving",
+    "question": "What is hydroplaning, and at what speed can it begin in heavy rain?",
+    "options": [
+      "Tires floating on a film of water with total loss of traction, possible at speeds as low as 35 MPH.",
+      "Brakes overheating from water intrusion.",
+      "Engine flooding from deep puddles.",
+      "Windshield fogging that reduces visibility."
+    ],
+    "answerIndex": 0,
+    "explanation": "Hydroplaning occurs when water creates a film between your tires and the road surface, causing complete loss of steering and braking. It can happen at speeds as low as 35 MPH."
+  },
+  {
+    "id": "gq51",
+    "category": "Weather, Emergencies & Hazardous Driving",
+    "question": "If your vehicle begins to hydroplane, what should you do?",
+    "options": [
+      "Slam on the brakes immediately.",
+      "Ease your foot off the gas pedal gradually and steer straight until the tires regain traction.",
+      "Turn the steering wheel vigorously back and forth.",
+      "Pull the emergency handbrake."
+    ],
+    "answerIndex": 1,
+    "explanation": "If your vehicle hydroplanes, do NOT slam on the brakes. Gently ease off the accelerator and steer straight until your tires make contact with the pavement again."
+  },
+  {
+    "id": "gq52",
+    "category": "Weather, Emergencies & Hazardous Driving",
+    "question": "If your vehicle begins to skid, what is the proper recovery technique?",
+    "options": [
+      "Brake hard and steer in the opposite direction of the skid.",
+      "Ease off the accelerator and steer gently in the direction you want the front of the vehicle to go.",
+      "Accelerate rapidly to power out of the skid.",
+      "Turn off the vehicle ignition."
+    ],
+    "answerIndex": 1,
+    "explanation": "To recover from a skid, take your foot off the accelerator and gently steer in the direction you want the front wheels to travel. Avoid slamming on brakes."
+  },
+  {
+    "id": "gq53",
+    "category": "Weather, Emergencies & Hazardous Driving",
+    "question": "Why are bridges and overpasses especially dangerous in freezing weather?",
+    "options": [
+      "Salt is not allowed on bridges.",
+      "They freeze before normal road surfaces because cold air circulates both above and below the bridge deck.",
+      "They have lower speed limits.",
+      "Bridge pavements are smoother than highway roads."
+    ],
+    "answerIndex": 1,
+    "explanation": "Bridges and ramps freeze before other roadway surfaces because cold air circulates underneath and around the bridge deck."
+  },
+  {
+    "id": "gq54",
+    "category": "Weather, Emergencies & Hazardous Driving",
+    "question": "If you experience a sudden tire blowout while driving at highway speed, what should you do?",
+    "options": [
+      "Hit the brakes as hard as possible immediately.",
+      "Hold the steering wheel firmly, keep the vehicle straight, ease off the gas, and brake gently only after the vehicle slows down.",
+      "Yank the steering wheel to pull off the road abruptly.",
+      "Shift into reverse."
+    ],
+    "answerIndex": 1,
+    "explanation": "In a tire blowout, hold the wheel tightly to maintain control, take your foot off the accelerator, and let the car decelerate naturally before braking gently to pull over."
+  },
+  {
+    "id": "gq55",
+    "category": "Weather, Emergencies & Hazardous Driving",
+    "question": "If your accelerator pedal gets stuck while driving, what should you do first?",
+    "options": [
+      "Turn off the ignition and remove the key immediately.",
+      "Shift into neutral, apply steady brake pressure, and steer safely off the roadway.",
+      "Pump the gas pedal repeatedly at full power.",
+      "Jump out of the vehicle."
+    ],
+    "answerIndex": 1,
+    "explanation": "Shift into NEUTRAL. This disconnects the engine from the wheels. Then apply steady brakes and steer safely to the shoulder before turning off the engine."
+  },
+  {
+    "id": "gq56",
+    "category": "Pavement Markings & Lane Usage",
+    "question": "What does a solid double yellow line down the center of a two-way road signify?",
+    "options": [
+      "Passing is permitted from both directions.",
+      "Passing is prohibited from both directions.",
+      "Passing is permitted only during daylight hours.",
+      "The left lane is reserved for bicycles."
+    ],
+    "answerIndex": 1,
+    "explanation": "A double solid yellow line indicates that passing is prohibited in both directions for traffic on either side."
+  },
+  {
+    "id": "gq57",
+    "category": "Pavement Markings & Lane Usage",
+    "question": "What does a broken yellow line alongside a solid yellow line mean?",
+    "options": [
+      "You may pass only if the broken yellow line is on your side of the road and it is safe.",
+      "Passing is forbidden from both directions.",
+      "Both directions may pass at any time.",
+      "You must turn around immediately."
+    ],
+    "answerIndex": 0,
+    "explanation": "When a broken line is on your side, you may pass if the way ahead is clear. If the solid line is on your side, passing is prohibited."
+  },
+  {
+    "id": "gq58",
+    "category": "Pavement Markings & Lane Usage",
+    "question": "What do broken white lines painted on the roadway indicate?",
+    "options": [
+      "Traffic is traveling in opposite directions.",
+      "Traffic is moving in the same direction, and lane changes are permitted when safe.",
+      "Lane changes are prohibited at all times.",
+      "Pedestrian crosswalk zone."
+    ],
+    "answerIndex": 1,
+    "explanation": "Broken white lines separate lanes of traffic traveling in the same direction. Drivers may cross these lines to change lanes when safe."
+  },
+  {
+    "id": "gq59",
+    "category": "Pavement Markings & Lane Usage",
+    "question": "What do solid white lines separating lanes of traffic moving in the same direction mean?",
+    "options": [
+      "Lane changes are encouraged.",
+      "Lane changes are discouraged or restricted; drivers should stay in their lane.",
+      "Passing is permitted at any time.",
+      "The lane is closing in 100 feet."
+    ],
+    "answerIndex": 1,
+    "explanation": "Solid white lines discourage lane changes and signify areas where changing lanes is hazardous (such as near intersections or freeway merges)."
+  },
+  {
+    "id": "gq60",
+    "category": "Pavement Markings & Lane Usage",
+    "question": "What does a diamond symbol painted on a highway lane designate?",
+    "options": [
+      "The lane is reserved for High Occupancy Vehicles (HOV), buses, or carpools.",
+      "Passing is allowed in this lane only.",
+      "Speed limit is 10 MPH higher in this lane.",
+      "Emergency stopping only."
+    ],
+    "answerIndex": 0,
+    "explanation": "A painted white diamond marks an HOV (High Occupancy Vehicle) lane, restricted during specified hours to buses, carpools, or vehicles meeting passenger minimums (e.g., HOV-2 or HOV-3)."
+  },
+  {
+    "id": "gq61",
+    "category": "Pavement Markings & Lane Usage",
+    "question": "What does a painted bicycle symbol with two chevrons ('Sharrow') on the pavement mean?",
+    "options": [
+      "Bicycles must ride on the sidewalk.",
+      "Shared lane marking indicating motorists and bicyclists share the full travel lane.",
+      "Motorists are prohibited from using this lane.",
+      "Bicycles must yield to all automobiles."
+    ],
+    "answerIndex": 1,
+    "explanation": "Shared Lane Markings (Sharrows) alert road users that bicyclists may use the full travel lane and remind motorists to share the road safely."
+  },
+  {
+    "id": "gq62",
+    "category": "Sharing the Road",
+    "question": "When passing a bicyclist in Virginia, how much clearance must you legally provide?",
+    "options": [
+      "At least 1 foot",
+      "At least 2 feet",
+      "At least 3 feet",
+      "At least 5 feet"
+    ],
+    "answerIndex": 2,
+    "explanation": "Virginia law requires motorists to pass bicyclists with at least 3 feet of clearance. If unable to give 3 feet safely, the driver must wait until it is safe."
+  },
+  {
+    "id": "gq63",
+    "category": "Sharing the Road",
+    "question": "Under Virginia law, are bicyclists entitled to the full travel lane when necessary for safety?",
+    "options": [
+      "No, bicycles must always ride on the sidewalk.",
+      "Yes, bicycles are vehicles under the law and may use the full travel lane when passing, turning, or avoiding hazards.",
+      "Only on residential streets with speed limits under 15 MPH.",
+      "Only when escorted by a pilot vehicle."
+    ],
+    "answerIndex": 1,
+    "explanation": "Bicycles are legal vehicles on Virginia roads and have the right to use the full lane to avoid hazards, make turns, or when the lane is too narrow to share side-by-side."
+  },
+  {
+    "id": "gq64",
+    "category": "Sharing the Road",
+    "question": "What is the 'No-Zone' around large commercial trucks and buses?",
+    "options": [
+      "The area where trucks are not permitted to drive.",
+      "The large blind spots around the front, rear, and both sides of commercial trucks where cars cannot be seen.",
+      "The weight-station inspection zone.",
+      "The distance between two semi-trucks."
+    ],
+    "answerIndex": 1,
+    "explanation": "The 'No-Zone' refers to the expansive blind spots directly behind, in front of, and along both sides of large trucks. If you cannot see the driver in their mirror, they cannot see you."
+  },
+  {
+    "id": "gq65",
+    "category": "Sharing the Road",
+    "question": "Why should you allow extra following distance when trailing behind a motorcycle?",
+    "options": [
+      "Motorcycles can stop much more quickly than passenger cars, and road hazards affect them more severely.",
+      "Motorcycles accelerate very slowly.",
+      "Motorcycles frequently drop objects on the road.",
+      "Motorcycle brake lights are optional."
+    ],
+    "answerIndex": 0,
+    "explanation": "Motorcycles are lighter and can stop in much shorter distances. Following too closely drastically increases the risk of rear-ending the motorcyclist."
+  },
+  {
+    "id": "gq66",
+    "category": "General Virginia Rules & Penalties",
+    "question": "What is Virginia's law regarding holding a handheld mobile phone while operating a vehicle?",
+    "options": [
+      "Holding a phone is legal if using speakerphone.",
+      "Holding any handheld personal communications device while driving is completely illegal in Virginia.",
+      "It is legal only when stopped at red traffic lights.",
+      "It is permitted on interstate highways only."
+    ],
+    "answerIndex": 1,
+    "explanation": "Virginia law bans holding a handheld mobile device while operating a motor vehicle on any Virginia highway. First violation carries a $125 fine."
+  },
+  {
+    "id": "gq67",
+    "category": "General Virginia Rules & Penalties",
+    "question": "If you are involved in a traffic crash resulting in injury, death, or property damage, what must you do immediately?",
+    "options": [
+      "Drive home and report it online the following business day.",
+      "Stop at once, help any injured persons, and report the accident to police immediately.",
+      "Exchange business cards and leave the scene immediately.",
+      "Call your insurance agent before contacting law enforcement."
+    ],
+    "answerIndex": 1,
+    "explanation": "Virginia law requires stopping immediately at the scene of any crash involving injury, death, or property damage, rendering aid, and notifying law enforcement."
+  },
+  {
+    "id": "gq68",
+    "category": "General Virginia Rules & Penalties",
+    "question": "In Virginia, aggressive driving is defined as committing a hazard with intent to:",
+    "options": [
+      "Harass, intimidate, injure, or obstruct another driver.",
+      "Arrive at your destination on time.",
+      "Pass an oversized vehicle.",
+      "Test vehicle acceleration."
+    ],
+    "answerIndex": 0,
+    "explanation": "Virginia law classifies aggressive driving as operating a vehicle with the intent to harass, intimidate, injure, or obstruct other drivers."
+  },
+  {
+    "id": "gq69",
+    "category": "General Virginia Rules & Penalties",
+    "question": "When must you report a crash to the DMV in Virginia?",
+    "options": [
+      "If police do not investigate and the crash results in death, injury, or property damage of $1,500 or more.",
+      "Whenever any fender bender occurs.",
+      "Only when cited for a moving violation.",
+      "Within 90 days of any incident."
+    ],
+    "answerIndex": 0,
+    "explanation": "If law enforcement does not investigate the accident, drivers must file a crash report with DMV within 10 days if damage exceeds $1,500 or involves injury or death."
+  },
+  {
+    "id": "gq70",
+    "category": "General Virginia Rules & Penalties",
+    "question": "What should you do if an aggressive driver tailgates you or flashes their high beams?",
+    "options": [
+      "Brake check them to teach them a lesson.",
+      "Stay calm, do not make eye contact, safely move to the right lane, and let them pass.",
+      "Match their speed and refuse to let them overtake.",
+      "Honk your horn and wave angrily."
+    ],
+    "answerIndex": 1,
+    "explanation": "Never engage with aggressive drivers. Safely change lanes to the right, allow them to pass, and maintain your distance."
+  },
+  {
+    "id": "gq71",
+    "category": "General Virginia Rules & Penalties",
+    "question": "What does a flashing RED traffic light mean in Virginia?",
+    "options": [
+      "Slow down and proceed with caution without stopping.",
+      "Treat it exactly like a STOP sign: come to a complete stop, yield right-of-way, and proceed when clear.",
+      "The intersection is closed to traffic.",
+      "Pedestrians only may cross."
+    ],
+    "answerIndex": 1,
+    "explanation": "A flashing red traffic signal has the exact same legal meaning as a stop sign. You must come to a full stop and yield to traffic before proceeding."
+  },
+  {
+    "id": "gq72",
+    "category": "General Virginia Rules & Penalties",
+    "question": "What does a flashing YELLOW traffic light mean in Virginia?",
+    "options": [
+      "Come to a mandatory complete stop.",
+      "Slow down and proceed through the intersection with caution.",
+      "The light is about to turn red within 2 seconds.",
+      "Right turns only are permitted."
+    ],
+    "answerIndex": 1,
+    "explanation": "A flashing yellow light warns drivers to slow down and proceed with heightened caution."
+  },
+  {
+    "id": "gq73",
+    "category": "General Virginia Rules & Penalties",
+    "question": "What does a steady yellow light indicate?",
+    "options": [
+      "Speed up to clear the intersection before the red light.",
+      "The red light is about to appear; come to a stop if you can safely do so without risking a rear-end collision.",
+      "You have guaranteed right-of-way over all vehicles.",
+      "You may make a U-turn."
+    ],
+    "answerIndex": 1,
+    "explanation": "A steady yellow signal warns that the green signal has ended and red is imminent. Stop if you can do so safely; do not accelerate into the intersection."
+  },
+  {
+    "id": "gq74",
+    "category": "General Virginia Rules & Penalties",
+    "question": "When entering an expressway or interstate from an on-ramp, what is the correct procedure?",
+    "options": [
+      "Stop at the beginning of the acceleration lane and wait for a gap.",
+      "Use the acceleration lane to match expressway speed, scan your mirrors and blind spots, and merge smoothly into a gap.",
+      "Immediately merge across all lanes into the left express lane.",
+      "Force expressway drivers to yield to you."
+    ],
+    "answerIndex": 1,
+    "explanation": "Use the acceleration lane to build speed matching expressway traffic, signal, check blind spots, and merge when there is a safe gap."
+  },
+  {
+    "id": "gq75",
+    "category": "General Virginia Rules & Penalties",
+    "question": "If you miss your exit on a highway or interstate, what should you do?",
+    "options": [
+      "Stop on the shoulder and back up to the ramp.",
+      "Make an immediate U-turn across the grass median.",
+      "Continue to the next exit and safely turn around there.",
+      "Honk your horn and cut across exit lanes."
+    ],
+    "answerIndex": 2,
+    "explanation": "Never back up or make a U-turn on an interstate highway. Proceed to the next exit and navigate back safely."
+  }
+]
