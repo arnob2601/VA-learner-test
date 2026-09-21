@@ -1,0 +1,394 @@
+{
+  "default": {
+    "clientId": "client_htxclz0muapnd95",
+    "history": [],
+    "missedQuestions": [],
+    "masteredSigns": [
+      "stop_sign",
+      "yield_sign",
+      "speed_limit_25"
+    ],
+    "activeExam": {
+      "mode": "dmv_real",
+      "part": 1,
+      "questions": [
+        {
+          "id": "sq37",
+          "signId": "yield_sign",
+          "question": "What shape is exclusively used for YIELD signs?",
+          "options": [
+            "Equilateral triangle pointing down",
+            "Isosceles triangle pointing right",
+            "Diamond pointing up",
+            "Vertical rectangle"
+          ],
+          "answerIndex": 0,
+          "explanation": "An equilateral triangle pointing downwards is exclusively used for YIELD signs."
+        },
+        {
+          "id": "sq32",
+          "signId": "center_turn_lane",
+          "question": "What is the proper use of a center lane marked with opposing turn arrows and 'ONLY'?",
+          "options": [
+            "Use it as a passing lane to overtake slow drivers.",
+            "Use it only to make left turns from either direction or enter traffic after turning left.",
+            "Use it as a continuous travel lane when traffic is heavy.",
+            "Use it for emergency stopping and parking."
+          ],
+          "answerIndex": 1,
+          "explanation": "The center two-way left turn lane is strictly for turning left from either direction. It must never be used for through travel or passing."
+        },
+        {
+          "id": "sq5",
+          "signId": "railroad_crossbuck",
+          "question": "When approaching this white crossbuck sign, what is required of Virginia drivers?",
+          "options": [
+            "Treat it as a yield sign; look, listen, and stop if a train is approaching.",
+            "Speed up to clear the tracks before the gate lowers.",
+            "Always come to a mandatory complete stop, even if no train is coming.",
+            "Sound your horn twice before crossing the tracks."
+          ],
+          "answerIndex": 0,
+          "explanation": "A railroad crossbuck sign indicates a railroad crossing and must be treated as a yield sign. If lights are flashing, gates are down, or a train is visible, you must stop between 15 and 50 feet of the nearest rail."
+        },
+        {
+          "id": "sq38",
+          "signId": "school_zone",
+          "question": "What sign shape is exclusively reserved for School Zones and School Crossings in Virginia?",
+          "options": [
+            "Round (Circle)",
+            "Diamond",
+            "Pentagon (5-sided, pointing up)",
+            "Pennant (pointing right)"
+          ],
+          "answerIndex": 2,
+          "explanation": "The 5-sided Pentagon pointing upwards is uniquely reserved for School Zone and School Crossing signs."
+        },
+        {
+          "id": "sq10",
+          "signId": "slippery_when_wet",
+          "question": "What does this diamond warning sign indicate?",
+          "options": [
+            "Winding mountain road with hairpin curves ahead.",
+            "Road surface becomes slippery when wet; reduce speed and avoid sudden maneuvers.",
+            "Vehicles may experience strong crosswinds on this bridge.",
+            "Rough road surface with gravel or unpaved pavement."
+          ],
+          "answerIndex": 1,
+          "explanation": "This sign warns that the pavement is slick and slippery when wet. Roads are especially slippery during the first 10-15 minutes of a rain shower due to accumulated oil."
+        },
+        {
+          "id": "sq21",
+          "signId": "hill_steep_downgrade",
+          "question": "What should drivers do when seeing this truck on an incline sign?",
+          "options": [
+            "Shift into neutral to save fuel down the grade.",
+            "Check brakes and shift into a lower gear to control speed before starting downhill.",
+            "Pump the brakes hard and rapidly throughout the descent.",
+            "Speed up to maintain highway momentum."
+          ],
+          "answerIndex": 1,
+          "explanation": "This sign warns of a steep downhill slope ahead. Drivers (especially heavy vehicles) should downshift to use engine braking and avoid riding the brakes."
+        },
+        {
+          "id": "sq12",
+          "signId": "divided_highway_ends",
+          "question": "What does this diamond sign with the median divider at the bottom mean?",
+          "options": [
+            "Divided highway ends ahead; oncoming traffic will no longer be separated by a median.",
+            "Divided highway begins ahead; move into the right lane immediately.",
+            "Dual turn lanes are ending ahead.",
+            "Freeway ramp merging onto an interstate highway."
+          ],
+          "answerIndex": 0,
+          "explanation": "When the median island symbol is at the BOTTOM of the sign, it indicates the divided highway is ending and traffic will be traveling both ways on an undivided roadway."
+        },
+        {
+          "id": "sq34",
+          "signId": "speed_limit_55",
+          "question": "In Virginia, what is the maximum speed limit on non-interstate highways if not otherwise posted?",
+          "options": [
+            "45 MPH",
+            "50 MPH",
+            "55 MPH",
+            "65 MPH"
+          ],
+          "answerIndex": 2,
+          "explanation": "Unless posted otherwise, 55 MPH is the maximum legal speed limit on all secondary and primary paved highways in Virginia other than school/business/residential areas."
+        },
+        {
+          "id": "sq33",
+          "signId": "speed_limit_25",
+          "question": "Unless otherwise posted, what is the default legal speed limit in Virginia residential areas?",
+          "options": [
+            "15 MPH",
+            "20 MPH",
+            "25 MPH",
+            "35 MPH"
+          ],
+          "answerIndex": 2,
+          "explanation": "In Virginia, the default statutory speed limit in school, business, and residential areas is 25 MPH unless a different limit is posted."
+        },
+        {
+          "id": "sq7",
+          "signId": "do_not_enter",
+          "question": "What should you do if you see this red and white square sign?",
+          "options": [
+            "Proceed cautiously with your hazard lights on.",
+            "Do not drive onto this ramp or roadway; you are facing oncoming traffic.",
+            "Authorized government vehicles only may enter.",
+            "Entry is prohibited only between 10 PM and 6 AM."
+          ],
+          "answerIndex": 1,
+          "explanation": "DO NOT ENTER signs are posted at freeway exit ramps and one-way streets to notify drivers that traffic is traveling in the opposite direction."
+        }
+      ],
+      "currentIndex": 2,
+      "selectedOption": null,
+      "hasAnswered": false,
+      "userAnswers": [
+        {
+          "question": {
+            "id": "sq37",
+            "signId": "yield_sign",
+            "question": "What shape is exclusively used for YIELD signs?",
+            "options": [
+              "Equilateral triangle pointing down",
+              "Isosceles triangle pointing right",
+              "Diamond pointing up",
+              "Vertical rectangle"
+            ],
+            "answerIndex": 0,
+            "explanation": "An equilateral triangle pointing downwards is exclusively used for YIELD signs."
+          },
+          "selectedIndex": 0,
+          "isCorrect": true,
+          "timeSpent": 0
+        },
+        {
+          "question": {
+            "id": "sq32",
+            "signId": "center_turn_lane",
+            "question": "What is the proper use of a center lane marked with opposing turn arrows and 'ONLY'?",
+            "options": [
+              "Use it as a passing lane to overtake slow drivers.",
+              "Use it only to make left turns from either direction or enter traffic after turning left.",
+              "Use it as a continuous travel lane when traffic is heavy.",
+              "Use it for emergency stopping and parking."
+            ],
+            "answerIndex": 1,
+            "explanation": "The center two-way left turn lane is strictly for turning left from either direction. It must never be used for through travel or passing."
+          },
+          "selectedIndex": 1,
+          "isCorrect": true,
+          "timeSpent": 0
+        }
+      ],
+      "correctCount": 2,
+      "incorrectCount": 0,
+      "elapsedSeconds": 52,
+      "startTime": 1789962937530,
+      "timestamp": 1789963747663
+    },
+    "theme": "kiosk",
+    "audioEnabled": true,
+    "updatedAt": 1789963747817
+  },
+  "clients": {
+    "client_htxclz0muapnd95": {
+      "clientId": "client_htxclz0muapnd95",
+      "history": [],
+      "missedQuestions": [],
+      "masteredSigns": [
+        "stop_sign",
+        "yield_sign",
+        "speed_limit_25"
+      ],
+      "activeExam": {
+        "mode": "dmv_real",
+        "part": 1,
+        "questions": [
+          {
+            "id": "sq37",
+            "signId": "yield_sign",
+            "question": "What shape is exclusively used for YIELD signs?",
+            "options": [
+              "Equilateral triangle pointing down",
+              "Isosceles triangle pointing right",
+              "Diamond pointing up",
+              "Vertical rectangle"
+            ],
+            "answerIndex": 0,
+            "explanation": "An equilateral triangle pointing downwards is exclusively used for YIELD signs."
+          },
+          {
+            "id": "sq32",
+            "signId": "center_turn_lane",
+            "question": "What is the proper use of a center lane marked with opposing turn arrows and 'ONLY'?",
+            "options": [
+              "Use it as a passing lane to overtake slow drivers.",
+              "Use it only to make left turns from either direction or enter traffic after turning left.",
+              "Use it as a continuous travel lane when traffic is heavy.",
+              "Use it for emergency stopping and parking."
+            ],
+            "answerIndex": 1,
+            "explanation": "The center two-way left turn lane is strictly for turning left from either direction. It must never be used for through travel or passing."
+          },
+          {
+            "id": "sq5",
+            "signId": "railroad_crossbuck",
+            "question": "When approaching this white crossbuck sign, what is required of Virginia drivers?",
+            "options": [
+              "Treat it as a yield sign; look, listen, and stop if a train is approaching.",
+              "Speed up to clear the tracks before the gate lowers.",
+              "Always come to a mandatory complete stop, even if no train is coming.",
+              "Sound your horn twice before crossing the tracks."
+            ],
+            "answerIndex": 0,
+            "explanation": "A railroad crossbuck sign indicates a railroad crossing and must be treated as a yield sign. If lights are flashing, gates are down, or a train is visible, you must stop between 15 and 50 feet of the nearest rail."
+          },
+          {
+            "id": "sq38",
+            "signId": "school_zone",
+            "question": "What sign shape is exclusively reserved for School Zones and School Crossings in Virginia?",
+            "options": [
+              "Round (Circle)",
+              "Diamond",
+              "Pentagon (5-sided, pointing up)",
+              "Pennant (pointing right)"
+            ],
+            "answerIndex": 2,
+            "explanation": "The 5-sided Pentagon pointing upwards is uniquely reserved for School Zone and School Crossing signs."
+          },
+          {
+            "id": "sq10",
+            "signId": "slippery_when_wet",
+            "question": "What does this diamond warning sign indicate?",
+            "options": [
+              "Winding mountain road with hairpin curves ahead.",
+              "Road surface becomes slippery when wet; reduce speed and avoid sudden maneuvers.",
+              "Vehicles may experience strong crosswinds on this bridge.",
+              "Rough road surface with gravel or unpaved pavement."
+            ],
+            "answerIndex": 1,
+            "explanation": "This sign warns that the pavement is slick and slippery when wet. Roads are especially slippery during the first 10-15 minutes of a rain shower due to accumulated oil."
+          },
+          {
+            "id": "sq21",
+            "signId": "hill_steep_downgrade",
+            "question": "What should drivers do when seeing this truck on an incline sign?",
+            "options": [
+              "Shift into neutral to save fuel down the grade.",
+              "Check brakes and shift into a lower gear to control speed before starting downhill.",
+              "Pump the brakes hard and rapidly throughout the descent.",
+              "Speed up to maintain highway momentum."
+            ],
+            "answerIndex": 1,
+            "explanation": "This sign warns of a steep downhill slope ahead. Drivers (especially heavy vehicles) should downshift to use engine braking and avoid riding the brakes."
+          },
+          {
+            "id": "sq12",
+            "signId": "divided_highway_ends",
+            "question": "What does this diamond sign with the median divider at the bottom mean?",
+            "options": [
+              "Divided highway ends ahead; oncoming traffic will no longer be separated by a median.",
+              "Divided highway begins ahead; move into the right lane immediately.",
+              "Dual turn lanes are ending ahead.",
+              "Freeway ramp merging onto an interstate highway."
+            ],
+            "answerIndex": 0,
+            "explanation": "When the median island symbol is at the BOTTOM of the sign, it indicates the divided highway is ending and traffic will be traveling both ways on an undivided roadway."
+          },
+          {
+            "id": "sq34",
+            "signId": "speed_limit_55",
+            "question": "In Virginia, what is the maximum speed limit on non-interstate highways if not otherwise posted?",
+            "options": [
+              "45 MPH",
+              "50 MPH",
+              "55 MPH",
+              "65 MPH"
+            ],
+            "answerIndex": 2,
+            "explanation": "Unless posted otherwise, 55 MPH is the maximum legal speed limit on all secondary and primary paved highways in Virginia other than school/business/residential areas."
+          },
+          {
+            "id": "sq33",
+            "signId": "speed_limit_25",
+            "question": "Unless otherwise posted, what is the default legal speed limit in Virginia residential areas?",
+            "options": [
+              "15 MPH",
+              "20 MPH",
+              "25 MPH",
+              "35 MPH"
+            ],
+            "answerIndex": 2,
+            "explanation": "In Virginia, the default statutory speed limit in school, business, and residential areas is 25 MPH unless a different limit is posted."
+          },
+          {
+            "id": "sq7",
+            "signId": "do_not_enter",
+            "question": "What should you do if you see this red and white square sign?",
+            "options": [
+              "Proceed cautiously with your hazard lights on.",
+              "Do not drive onto this ramp or roadway; you are facing oncoming traffic.",
+              "Authorized government vehicles only may enter.",
+              "Entry is prohibited only between 10 PM and 6 AM."
+            ],
+            "answerIndex": 1,
+            "explanation": "DO NOT ENTER signs are posted at freeway exit ramps and one-way streets to notify drivers that traffic is traveling in the opposite direction."
+          }
+        ],
+        "currentIndex": 2,
+        "selectedOption": null,
+        "hasAnswered": false,
+        "userAnswers": [
+          {
+            "question": {
+              "id": "sq37",
+              "signId": "yield_sign",
+              "question": "What shape is exclusively used for YIELD signs?",
+              "options": [
+                "Equilateral triangle pointing down",
+                "Isosceles triangle pointing right",
+                "Diamond pointing up",
+                "Vertical rectangle"
+              ],
+              "answerIndex": 0,
+              "explanation": "An equilateral triangle pointing downwards is exclusively used for YIELD signs."
+            },
+            "selectedIndex": 0,
+            "isCorrect": true,
+            "timeSpent": 0
+          },
+          {
+            "question": {
+              "id": "sq32",
+              "signId": "center_turn_lane",
+              "question": "What is the proper use of a center lane marked with opposing turn arrows and 'ONLY'?",
+              "options": [
+                "Use it as a passing lane to overtake slow drivers.",
+                "Use it only to make left turns from either direction or enter traffic after turning left.",
+                "Use it as a continuous travel lane when traffic is heavy.",
+                "Use it for emergency stopping and parking."
+              ],
+              "answerIndex": 1,
+              "explanation": "The center two-way left turn lane is strictly for turning left from either direction. It must never be used for through travel or passing."
+            },
+            "selectedIndex": 1,
+            "isCorrect": true,
+            "timeSpent": 0
+          }
+        ],
+        "correctCount": 2,
+        "incorrectCount": 0,
+        "elapsedSeconds": 52,
+        "startTime": 1789962937530,
+        "timestamp": 1789963747663
+      },
+      "theme": "kiosk",
+      "audioEnabled": true,
+      "updatedAt": 1789963747817
+    }
+  }
+}
