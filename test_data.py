@@ -30,6 +30,12 @@ def test_datasets():
         assert "color" in sign, "Sign missing color"
         assert "meaning" in sign, "Sign missing meaning"
         assert "svg" in sign and sign["svg"].startswith("<svg"), f"Invalid SVG for {sign['id']}"
+        assert "image_url" in sign, f"Sign missing image_url for {sign['id']}"
+        # Validate that official sign image file exists on disk
+        img_rel_path = sign["image_url"].lstrip("/")
+        img_abs_path = os.path.join(base_dir, "static", img_rel_path)
+        assert os.path.exists(img_abs_path), f"Official sign image file missing on disk: {img_abs_path}"
+        assert os.path.getsize(img_abs_path) > 500, f"Sign image file too small or empty: {img_abs_path}"
 
     # Validate sign questions
     for q in q_signs:

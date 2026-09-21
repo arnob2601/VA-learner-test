@@ -72,6 +72,7 @@ class ExamEngine {
     window.app.switchScreen('screen-exam');
     this.renderExamHeader();
     this.renderQuestion();
+    this.saveActiveState();
   }
 
   startPracticeExam() {
@@ -95,6 +96,7 @@ class ExamEngine {
     window.app.switchScreen('screen-exam');
     this.renderExamHeader();
     this.renderQuestion();
+    this.saveActiveState();
   }
 
   startTopicQuiz(categoryName) {
@@ -126,6 +128,7 @@ class ExamEngine {
     window.app.switchScreen('screen-exam');
     this.renderExamHeader();
     this.renderQuestion();
+    this.saveActiveState();
   }
 
   startMissedQuestionsDrill() {
@@ -155,6 +158,7 @@ class ExamEngine {
     window.app.switchScreen('screen-exam');
     this.renderExamHeader();
     this.renderQuestion();
+    this.saveActiveState();
   }
 
   startTimer() {
@@ -178,6 +182,119 @@ class ExamEngine {
       const mins = Math.floor(this.elapsedSeconds / 60);
       const secs = this.elapsedSeconds % 60;
       el.textContent = `⏱️ ${mins}:${secs < 10 ? '0' : ''}${secs}`;
+    }
+  }
+
+  // --- Active Exam Persistence State Management ---
+
+  saveActiveState() {
+    if (!this.questions || this.questions.length === 0) return;
+    const state = {
+      mode: this.mode,
+      part: this.part,
+      questions: this.questions,
+      currentIndex: this.currentIndex,
+      selectedOption: this.selectedOption,
+      hasAnswered: this.hasAnswered,
+      userAnswers: this.userAnswers,
+      correctCount: this.correctCount,
+      incorrectCount: this.incorrectCount,
+      elapsedSeconds: this.elapsedSeconds,
+      startTime: this.startTime,
+      timestamp: Date.now()
+    };
+    localStorage.setItem('va_dmv_active_exam', JSON.stringify(state));
+    if (window.app) {
+      window.app.queueServerSync();
+      window.app.updateDashboardMetrics();
+    }
+  }
+
+  clearActiveState() {
+    localStorage.removeItem('va_dmv_active_exam');
+    if (window.app) {
+      window.app.queueServerSync();
+      window.app.updateDashboardMetrics();
+    }
+  }
+
+  discardActiveExam() {
+    this.stopTimer();
+    this.clearActiveState();
+    if (window.soundFX) window.soundFX.tap();
+  }
+
+  resumeActiveExam() {
+    const raw = localStorage.getItem('va_dmv_active_exam');
+    if (!raw) return;
+
+    try {
+      const state = JSON.parse(raw);
+      this.mode = state.mode || 'dmv_real';
+      this.part = state.part || 1;
+      this.questions = state.questions || [];
+      this.currentIndex = typeof state.currentIndex === 'number' ? state.currentIndex : 0;
+      this.selectedOption = state.selectedOption !== undefined ? state.selectedOption : null;
+      this.hasAnswered = !!state.hasAnswered;
+      this.userAnswers = state.userAnswers || [];
+      this.correctCount = state.correctCount || 0;
+      this.incorrectCount = state.incorrectCount || 0;
+      this.elapsedSeconds = state.elapsedSeconds || 0;
+      this.startTime = state.startTime || Date.now();
+
+      if (this.questions.length === 0 || this.currentIndex >= this.questions.length) {
+        this.clearActiveState();
+        return;
+      }
+
+      window.app.switchScreen('screen-exam');
+      this.startTimer();
+      this.renderExamHeader();
+      this.renderQuestion();
+
+      if (this.hasAnswered) {
+        const q = this.questions[this.currentIndex];
+        const isCorrect = this.selectedOption === q.answerIndex;
+        const options = document.querySelectorAll('.option-card');
+        options.forEach(opt => {
+          const idx = parseInt(opt.dataset.index);
+          opt.disabled = true;
+          if (idx === q.answerIndex) {
+            opt.classList.add('correct');
+          } else if (idx === this.selectedOption) {
+            opt.classList.add('incorrect');
+          }
+        });
+
+        const feedbackBox = document.getElementById('exam-feedback-box');
+        if (feedbackBox) {
+          feedbackBox.style.display = 'block';
+          feedbackBox.className = `feedback-box ${isCorrect ? 'feedback-correct' : 'feedback-incorrect'}`;
+          feedbackBox.innerHTML = `
+            <div class="feedback-header">
+              <span class="feedback-icon">${isCorrect ? '✅ Correct!' : '❌ Incorrect'}</span>
+            </div>
+            <p class="feedback-explanation">${q.explanation}</p>
+          `;
+        }
+
+        const submitBtn = document.getElementById('btn-submit-answer');
+        if (submitBtn) {
+          submitBtn.textContent = (this.currentIndex + 1 < this.questions.length) ? "Next Question →" : "View Exam Results";
+          submitBtn.removeAttribute('disabled');
+          submitBtn.className = "btn btn-success btn-touch-large";
+          submitBtn.onclick = () => {
+            this.currentIndex++;
+            this.renderQuestion();
+            this.saveActiveState();
+          };
+        }
+      } else if (this.selectedOption !== null) {
+        this.selectOption(this.selectedOption);
+      }
+    } catch (e) {
+      console.error('Error resuming active exam:', e);
+      this.clearActiveState();
     }
   }
 
@@ -327,6 +444,7 @@ class ExamEngine {
     }
 
     if (window.soundFX) window.soundFX.tap();
+    this.saveActiveState();
   }
 
   submitAnswer() {
@@ -433,8 +551,10 @@ class ExamEngine {
       submitBtn.onclick = () => {
         this.currentIndex++;
         this.renderQuestion();
+        this.saveActiveState();
       };
     }
+    this.saveActiveState();
   }
 
   handleSectionCompletion() {
@@ -497,9 +617,11 @@ class ExamEngine {
 
     this.renderExamHeader();
     this.renderQuestion();
+    this.saveActiveState();
   }
 
   renderDmvDiscontinued(missedQuestion, chosenIndex) {
+    this.clearActiveState();
     if (window.soundFX) window.soundFX.buzz();
 
     // Record test attempt in history
@@ -567,6 +689,7 @@ class ExamEngine {
   }
 
   renderExamResults(passed, reason) {
+    this.clearActiveState();
     if (passed) {
       if (window.soundFX) window.soundFX.fanfare();
     } else {

@@ -7,7 +7,8 @@
     "category": "regulatory",
     "meaning": "Come to a complete stop at the stop line, crosswalk, or before entering the intersection. Yield right-of-way to pedestrians and oncoming traffic before proceeding.",
     "key_rule": "You must come to a COMPLETE stop. A rolling stop is illegal in Virginia.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,5 85,5 115,35 115,85 85,115 35,115 5,85 5,35\" fill=\"#CC0000\" stroke=\"#FFFFFF\" stroke-width=\"4\"/><polygon points=\"36,8 84,8 112,36 112,84 84,112 36,112 8,84 8,36\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2\"/><text x=\"60\" y=\"69\" font-family=\"Arial Black, Impact, sans-serif\" font-size=\"25\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\" letter-spacing=\"1\">STOP</text></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/stop_sign.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/stop_sign.png"
   },
   {
     "id": "yield_sign",
@@ -17,7 +18,8 @@
     "category": "regulatory",
     "meaning": "Slow down as you approach the intersection. Prepare to stop and yield right-of-way to all vehicles and pedestrians before proceeding.",
     "key_rule": "You must stop if necessary to avoid interfering with any traffic with right-of-way.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"10,15 110,15 60,105\" fill=\"#CC0000\"/><polygon points=\"26,24 94,24 60,86\" fill=\"#FFFFFF\"/><text x=\"60\" y=\"47\" font-family=\"Arial Black, Impact, sans-serif\" font-size=\"16\" font-weight=\"900\" fill=\"#CC0000\" text-anchor=\"middle\" letter-spacing=\"1\">YIELD</text></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/yield_sign.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/yield_sign.png"
   },
   {
     "id": "speed_limit_25",
@@ -27,7 +29,8 @@
     "category": "regulatory",
     "meaning": "The maximum legal speed in this zone under ideal conditions is 25 MPH. Default limit in Virginia school, business, and residential areas.",
     "key_rule": "In Virginia, 25 MPH is the statutory speed limit for school, business, and residential areas unless otherwise posted.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"8\" width=\"84\" height=\"104\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#000000\" stroke-width=\"4\"/><rect x=\"22\" y=\"12\" width=\"76\" height=\"96\" rx=\"6\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><text x=\"60\" y=\"36\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#000000\" text-anchor=\"middle\">SPEED</text><text x=\"60\" y=\"54\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#000000\" text-anchor=\"middle\">LIMIT</text><text x=\"60\" y=\"98\" font-family=\"Arial Black, Impact, sans-serif\" font-size=\"42\" font-weight=\"900\" fill=\"#000000\" text-anchor=\"middle\">25</text></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/speed_limit_25.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/speed_limit_25.png"
   },
   {
     "id": "speed_limit_55",
@@ -37,7 +40,8 @@
     "category": "regulatory",
     "meaning": "Maximum legal speed on this highway under normal conditions is 55 MPH. Default limit for paved Virginia state highways.",
     "key_rule": "55 MPH is Virginia statutory maximum on non-interstate highways unless posted otherwise.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"8\" width=\"84\" height=\"104\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#000000\" stroke-width=\"4\"/><rect x=\"22\" y=\"12\" width=\"76\" height=\"96\" rx=\"6\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><text x=\"60\" y=\"36\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#000000\" text-anchor=\"middle\">SPEED</text><text x=\"60\" y=\"54\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#000000\" text-anchor=\"middle\">LIMIT</text><text x=\"60\" y=\"98\" font-family=\"Arial Black, Impact, sans-serif\" font-size=\"42\" font-weight=\"900\" fill=\"#000000\" text-anchor=\"middle\">55</text></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/speed_limit_55.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/speed_limit_55.png"
   },
   {
     "id": "school_zone",
@@ -47,7 +51,8 @@
     "category": "school",
     "meaning": "You are near a school or school crossing. Watch for children crossing the street and obey reduced school speed limits (typically 25 MPH when flashing).",
     "key_rule": "Pentagon shape is exclusively reserved for school zone and school crossing warnings in Virginia.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,8 112,46 112,110 8,110 8,46\" fill=\"#CCFF00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,14 106,48 106,104 14,104 14,48\" fill=\"none\" stroke=\"#000000\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"45\" r=\"7\" fill=\"#000000\"/><path d=\"M40,60 L56,60 L54,82 L42,82 Z\" fill=\"#000000\"/><rect x=\"42\" y=\"82\" width=\"4\" height=\"16\" fill=\"#000000\"/><rect x=\"50\" y=\"82\" width=\"4\" height=\"16\" fill=\"#000000\"/><circle cx=\"72\" cy=\"52\" r=\"6\" fill=\"#000000\"/><path d=\"M64,65 L80,65 L78,84 L66,84 Z\" fill=\"#000000\"/><rect x=\"66\" y=\"84\" width=\"3.5\" height=\"14\" fill=\"#000000\"/><rect x=\"74\" y=\"84\" width=\"3.5\" height=\"14\" fill=\"#000000\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/school_zone.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/school_zone.png"
   },
   {
     "id": "no_passing_zone",
@@ -57,7 +62,8 @@
     "category": "warning",
     "meaning": "Posted on the LEFT side of two-lane roads. Indicates the start of a zone where passing other vehicles is prohibited.",
     "key_rule": "Always posted on the LEFT side of the highway facing oncoming traffic.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"10,16 112,60 10,104\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"15,23 102,60 15,97\" fill=\"none\" stroke=\"#000000\" stroke-width=\"2\"/><text x=\"32\" y=\"44\" font-family=\"Arial Black, sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#000000\">NO</text><text x=\"30\" y=\"64\" font-family=\"Arial Black, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#000000\">PASSING</text><text x=\"32\" y=\"84\" font-family=\"Arial Black, sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#000000\">ZONE</text></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/no_passing_zone.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/no_passing_zone.png"
   },
   {
     "id": "railroad_crossbuck",
@@ -67,7 +73,8 @@
     "category": "railroad",
     "meaning": "Identifies a railroad crossing. Treat as a yield sign; listen and look both ways for oncoming trains. Stop if a train is approaching.",
     "key_rule": "In Virginia, you must stop within 15 to 50 feet of the nearest rail when lights are flashing or a train is approaching.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"translate(60,60)\"><line x1=\"-50\" y1=\"-50\" x2=\"50\" y2=\"50\" stroke=\"#FFFFFF\" stroke-width=\"20\" stroke-linecap=\"square\"/><line x1=\"-50\" y1=\"50\" x2=\"50\" y2=\"-50\" stroke=\"#FFFFFF\" stroke-width=\"20\" stroke-linecap=\"square\"/><line x1=\"-50\" y1=\"-50\" x2=\"50\" y2=\"50\" stroke=\"#000000\" stroke-width=\"22\" stroke-linecap=\"square\" style=\"opacity:0.2\"/><line x1=\"-50\" y1=\"-50\" x2=\"50\" y2=\"50\" stroke=\"#000000\" stroke-width=\"1.5\"/><line x1=\"-50\" y1=\"50\" x2=\"50\" y2=\"-50\" stroke=\"#000000\" stroke-width=\"1.5\"/><text transform=\"rotate(45)\" x=\"0\" y=\"4\" font-family=\"Arial Black, sans-serif\" font-size=\"9.5\" font-weight=\"900\" fill=\"#000000\" text-anchor=\"middle\">RAILROAD</text><text transform=\"rotate(-45)\" x=\"0\" y=\"4\" font-family=\"Arial Black, sans-serif\" font-size=\"9.5\" font-weight=\"900\" fill=\"#000000\" text-anchor=\"middle\">CROSSING</text></g></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/railroad_crossbuck.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/railroad_crossbuck.png"
   },
   {
     "id": "railroad_advance",
@@ -77,7 +84,8 @@
     "category": "railroad",
     "meaning": "Alerts drivers that a railroad crossing is ahead. Slow down, listen, and look both directions for approaching trains.",
     "key_rule": "The round shape is exclusively used for advance warning of railroad crossings.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"52\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><circle cx=\"60\" cy=\"60\" r=\"47\" fill=\"none\" stroke=\"#000000\" stroke-width=\"2\"/><line x1=\"26\" y1=\"26\" x2=\"94\" y2=\"94\" stroke=\"#000000\" stroke-width=\"6\"/><line x1=\"26\" y1=\"94\" x2=\"94\" y2=\"26\" stroke=\"#000000\" stroke-width=\"6\"/><text x=\"32\" y=\"67\" font-family=\"Arial Black, sans-serif\" font-size=\"22\" font-weight=\"900\" fill=\"#000000\" text-anchor=\"middle\">R</text><text x=\"88\" y=\"67\" font-family=\"Arial Black, sans-serif\" font-size=\"22\" font-weight=\"900\" fill=\"#000000\" text-anchor=\"middle\">R</text></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/railroad_advance.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/railroad_advance.png"
   },
   {
     "id": "do_not_enter",
@@ -87,7 +95,8 @@
     "category": "regulatory",
     "meaning": "Do not drive onto this ramp, street, or lane. Traffic is moving in the opposite direction toward you.",
     "key_rule": "Commonly posted at freeway exit ramps and one-way streets to prevent head-on collisions.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"100\" height=\"100\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#000000\" stroke-width=\"3\"/><circle cx=\"60\" cy=\"60\" r=\"46\" fill=\"#CC0000\"/><rect x=\"22\" y=\"52\" width=\"76\" height=\"16\" fill=\"#FFFFFF\"/><text x=\"60\" y=\"38\" font-family=\"Arial Black, sans-serif\" font-size=\"11\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">DO NOT</text><text x=\"60\" y=\"87\" font-family=\"Arial Black, sans-serif\" font-size=\"12\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">ENTER</text></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/do_not_enter.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/do_not_enter.png"
   },
   {
     "id": "wrong_way",
@@ -97,7 +106,8 @@
     "category": "regulatory",
     "meaning": "You are driving in the wrong direction against oncoming traffic. Immediately pull off to the side, stop, and turn around when safe.",
     "key_rule": "Accompanies Do Not Enter signs on highway off-ramps.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"8\" y=\"24\" width=\"104\" height=\"72\" rx=\"6\" fill=\"#CC0000\" stroke=\"#FFFFFF\" stroke-width=\"4\"/><rect x=\"12\" y=\"28\" width=\"96\" height=\"64\" rx=\"4\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2\"/><text x=\"60\" y=\"53\" font-family=\"Arial Black, sans-serif\" font-size=\"14\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">WRONG</text><text x=\"60\" y=\"78\" font-family=\"Arial Black, sans-serif\" font-size=\"16\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">WAY</text></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/wrong_way.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/wrong_way.png"
   },
   {
     "id": "no_u_turn",
@@ -107,7 +117,8 @@
     "category": "regulatory",
     "meaning": "Making a 180-degree turn (U-turn) to travel in the opposite direction is prohibited at this location.",
     "key_rule": "Red circle with a diagonal slash always signifies an action is strictly prohibited.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"100\" height=\"100\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#000000\" stroke-width=\"3\"/><path d=\"M42,80 L42,52 A18,18 0 0,1 78,52 L78,80\" fill=\"none\" stroke=\"#000000\" stroke-width=\"8\"/><polygon points=\"34,76 42,92 50,76\" fill=\"#000000\"/><circle cx=\"60\" cy=\"60\" r=\"42\" fill=\"none\" stroke=\"#CC0000\" stroke-width=\"8\"/><line x1=\"30\" y1=\"30\" x2=\"90\" y2=\"90\" stroke=\"#CC0000\" stroke-width=\"8\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/no_u_turn.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/no_u_turn.png"
   },
   {
     "id": "no_left_turn",
@@ -117,7 +128,8 @@
     "category": "regulatory",
     "meaning": "You must not turn left at this intersection or entrance.",
     "key_rule": "Obey turn restrictions even when there is no cross traffic.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"100\" height=\"100\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#000000\" stroke-width=\"3\"/><path d=\"M70,82 L70,55 Q70,45 55,45 L38,45\" fill=\"none\" stroke=\"#000000\" stroke-width=\"8\"/><polygon points=\"40,36 24,45 40,54\" fill=\"#000000\"/><circle cx=\"60\" cy=\"60\" r=\"42\" fill=\"none\" stroke=\"#CC0000\" stroke-width=\"8\"/><line x1=\"30\" y1=\"30\" x2=\"90\" y2=\"90\" stroke=\"#CC0000\" stroke-width=\"8\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/no_left_turn.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/no_left_turn.png"
   },
   {
     "id": "no_right_turn",
@@ -127,7 +139,8 @@
     "category": "regulatory",
     "meaning": "You must not make a right turn at this intersection or roadway.",
     "key_rule": "Includes right turn on red restrictions unless signs state otherwise.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"100\" height=\"100\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#000000\" stroke-width=\"3\"/><path d=\"M50,82 L50,55 Q50,45 65,45 L82,45\" fill=\"none\" stroke=\"#000000\" stroke-width=\"8\"/><polygon points=\"80,36 96,45 80,54\" fill=\"#000000\"/><circle cx=\"60\" cy=\"60\" r=\"42\" fill=\"none\" stroke=\"#CC0000\" stroke-width=\"8\"/><line x1=\"30\" y1=\"30\" x2=\"90\" y2=\"90\" stroke=\"#CC0000\" stroke-width=\"8\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/no_right_turn.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/no_right_turn.png"
   },
   {
     "id": "one_way",
@@ -137,7 +150,8 @@
     "category": "regulatory",
     "meaning": "Traffic is permitted to travel only in the direction indicated by the arrow.",
     "key_rule": "When turning onto a one-way street, turn into the nearest available lane.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"6\" y=\"36\" width=\"108\" height=\"48\" rx=\"4\" fill=\"#000000\" stroke=\"#FFFFFF\" stroke-width=\"2\"/><polygon points=\"12,50 82,50 82,40 108,60 82,80 82,70 12,70\" fill=\"#FFFFFF\"/><text x=\"48\" y=\"65\" font-family=\"Arial Black, sans-serif\" font-size=\"11\" font-weight=\"900\" fill=\"#000000\" text-anchor=\"middle\">ONE WAY</text></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/one_way.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/one_way.png"
   },
   {
     "id": "slippery_when_wet",
@@ -147,7 +161,8 @@
     "category": "warning",
     "meaning": "The road surface becomes unusually slippery when wet. Slow down, avoid sudden turns or hard braking.",
     "key_rule": "Pavement is most slippery during the first 10-15 minutes after rain begins due to oil buildup.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><rect x=\"44\" y=\"38\" width=\"32\" height=\"16\" rx=\"4\" fill=\"#000000\"/><circle cx=\"50\" cy=\"56\" r=\"5\" fill=\"#000000\"/><circle cx=\"70\" cy=\"56\" r=\"5\" fill=\"#000000\"/><path d=\"M48,64 Q42,72 52,78 T46,92\" fill=\"none\" stroke=\"#000000\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M72,64 Q66,72 76,78 T70,92\" fill=\"none\" stroke=\"#000000\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/slippery_when_wet.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/slippery_when_wet.png"
   },
   {
     "id": "divided_highway_begins",
@@ -157,7 +172,8 @@
     "category": "warning",
     "meaning": "The highway ahead splits into two separate one-way roadways separated by a physical median island. Keep to the right side of the divider.",
     "key_rule": "Median island is located between opposing traffic flows. Keep to the right.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><path d=\"M52,28 A8,8 0 0,1 68,28 L66,48 A6,6 0 0,1 54,48 Z\" fill=\"#000000\"/><path d=\"M40,88 L40,48 Q40,36 48,34\" fill=\"none\" stroke=\"#000000\" stroke-width=\"5\" stroke-linecap=\"round\"/><polygon points=\"34,48 40,34 46,48\" fill=\"#000000\"/><path d=\"M80,34 L80,74 Q80,86 72,88\" fill=\"none\" stroke=\"#000000\" stroke-width=\"5\" stroke-linecap=\"round\"/><polygon points=\"86,74 80,88 74,74\" fill=\"#000000\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/divided_highway_begins.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/divided_highway_begins.png"
   },
   {
     "id": "divided_highway_ends",
@@ -167,7 +183,8 @@
     "category": "warning",
     "meaning": "The physical median divider is ending ahead. The roadway transitions back to two-way traffic on an undivided roadway.",
     "key_rule": "Watch for opposing oncoming traffic sharing the same undivided pavement.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><path d=\"M52,92 A8,8 0 0,0 68,92 L66,72 A6,6 0 0,0 54,72 Z\" fill=\"#000000\"/><path d=\"M40,32 L40,72 Q40,84 48,86\" fill=\"none\" stroke=\"#000000\" stroke-width=\"5\" stroke-linecap=\"round\"/><polygon points=\"34,46 40,32 46,46\" fill=\"#000000\"/><path d=\"M80,88 L80,48 Q80,36 72,34\" fill=\"none\" stroke=\"#000000\" stroke-width=\"5\" stroke-linecap=\"round\"/><polygon points=\"86,74 80,88 74,74\" fill=\"#000000\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/divided_highway_ends.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/divided_highway_ends.png"
   },
   {
     "id": "two_way_traffic",
@@ -177,7 +194,8 @@
     "category": "warning",
     "meaning": "You are leaving a one-way roadway and entering a roadway with traffic traveling in both opposing directions. Stay to the right.",
     "key_rule": "Opposing vehicles will be in the oncoming left lane.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><line x1=\"44\" y1=\"84\" x2=\"44\" y2=\"36\" stroke=\"#000000\" stroke-width=\"6\"/><polygon points=\"36,46 44,28 52,46\" fill=\"#000000\"/><line x1=\"76\" y1=\"36\" x2=\"76\" y2=\"84\" stroke=\"#000000\" stroke-width=\"6\"/><polygon points=\"68,74 76,92 84,74\" fill=\"#000000\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/two_way_traffic.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/two_way_traffic.png"
   },
   {
     "id": "lane_ends_merge",
@@ -187,7 +205,8 @@
     "category": "warning",
     "meaning": "The right lane is ending ahead. Drivers in the right lane must merge safely into the left lane.",
     "key_rule": "Vehicles already in the continuous left lane have right-of-way; merging vehicles must adjust speed and yield.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><line x1=\"44\" y1=\"28\" x2=\"44\" y2=\"92\" stroke=\"#000000\" stroke-width=\"6\"/><path d=\"M76,92 L76,65 Q76,46 56,36\" fill=\"none\" stroke=\"#000000\" stroke-width=\"6\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/lane_ends_merge.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/lane_ends_merge.png"
   },
   {
     "id": "roundabout_ahead",
@@ -197,7 +216,8 @@
     "category": "warning",
     "meaning": "Circular intersection (roundabout) ahead. Slow down, yield to pedestrians and traffic already inside the roundabout, and enter counter-clockwise.",
     "key_rule": "In Virginia roundabouts, entering vehicles must yield to traffic already circulating.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><path d=\"M60,34 A26,26 0 0,1 86,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"5\"/><polygon points=\"80,56 86,66 92,56\" fill=\"#000000\"/><path d=\"M86,60 A26,26 0 0,1 60,86\" fill=\"none\" stroke=\"#000000\" stroke-width=\"5\"/><polygon points=\"64,80 54,86 64,92\" fill=\"#000000\"/><path d=\"M60,86 A26,26 0 0,1 34,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"5\"/><polygon points=\"40,64 34,54 28,64\" fill=\"#000000\"/><path d=\"M34,60 A26,26 0 0,1 60,34\" fill=\"none\" stroke=\"#000000\" stroke-width=\"5\"/><polygon points=\"56,40 66,34 56,28\" fill=\"#000000\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/roundabout_ahead.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/roundabout_ahead.png"
   },
   {
     "id": "stop_ahead",
@@ -207,7 +227,8 @@
     "category": "warning",
     "meaning": "A stop sign is coming up ahead. Begin slowing down to ensure you can come to a complete stop before the intersection.",
     "key_rule": "Posted when the upcoming stop sign is hidden by curves, hills, or distance.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"52\" x2=\"60\" y2=\"28\" stroke=\"#000000\" stroke-width=\"6\"/><polygon points=\"50,38 60,24 70,38\" fill=\"#000000\"/><polygon points=\"48,58 72,58 84,70 84,82 72,94 48,94 36,82 36,70\" fill=\"#CC0000\" stroke=\"#FFFFFF\" stroke-width=\"2\"/><text x=\"60\" y=\"80\" font-family=\"Arial Black, sans-serif\" font-size=\"8\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">STOP</text></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/stop_ahead.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/stop_ahead.png"
   },
   {
     "id": "yield_ahead",
@@ -217,7 +238,8 @@
     "category": "warning",
     "meaning": "A yield sign is coming up ahead. Prepare to slow down, check for cross traffic, and stop if required.",
     "key_rule": "Prepare to yield right-of-way ahead.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"52\" x2=\"60\" y2=\"28\" stroke=\"#000000\" stroke-width=\"6\"/><polygon points=\"50,38 60,24 70,38\" fill=\"#000000\"/><polygon points=\"40,62 80,62 60,94\" fill=\"#CC0000\"/><polygon points=\"48,66 72,66 60,86\" fill=\"#FFFFFF\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/yield_ahead.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/yield_ahead.png"
   },
   {
     "id": "signal_ahead",
@@ -227,7 +249,8 @@
     "category": "warning",
     "meaning": "A traffic signal controls the intersection ahead. Be prepared for red lights and stop if necessary.",
     "key_rule": "Often posted on high-speed roads or where sightlines to signals are limited.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><rect x=\"47\" y=\"32\" width=\"26\" height=\"56\" rx=\"4\" fill=\"#000000\"/><circle cx=\"60\" cy=\"42\" r=\"6\" fill=\"#CC0000\"/><circle cx=\"60\" cy=\"60\" r=\"6\" fill=\"#FFCC00\"/><circle cx=\"60\" cy=\"78\" r=\"6\" fill=\"#00CC44\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/signal_ahead.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/signal_ahead.png"
   },
   {
     "id": "deer_crossing",
@@ -237,7 +260,8 @@
     "category": "warning",
     "meaning": "Deer frequently cross the roadway in this vicinity. Be especially alert at dusk, dawn, and night.",
     "key_rule": "Deer travel in groups; if you see one deer, expect others nearby.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><path d=\"M42,42 Q48,34 56,40 L64,48 L76,46 L82,40 L84,42 L80,50 L84,54 L80,56 L74,54 L66,66 L74,86 L68,88 L60,72 L50,72 L44,88 L38,86 L44,66 L38,62 Q34,54 42,42 Z\" fill=\"#000000\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/deer_crossing.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/deer_crossing.png"
   },
   {
     "id": "pedestrian_crossing",
@@ -247,7 +271,8 @@
     "category": "warning",
     "meaning": "Pedestrians may be crossing the street ahead. Yield right-of-way to all pedestrians in crosswalks.",
     "key_rule": "In Virginia, drivers must yield right-of-way to pedestrians crossing at any marked or unmarked intersection.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#CCFF00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><circle cx=\"62\" cy=\"38\" r=\"6\" fill=\"#000000\"/><path d=\"M52,54 L64,48 L72,58 L68,64 L62,56 L58,66 L70,84 L64,88 L52,70 L48,86 L42,84 L46,62 Q46,56 52,54 Z\" fill=\"#000000\"/><line x1=\"32\" y1=\"92\" x2=\"88\" y2=\"92\" stroke=\"#000000\" stroke-width=\"3\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/pedestrian_crossing.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/pedestrian_crossing.png"
   },
   {
     "id": "hill_steep_downgrade",
@@ -257,7 +282,8 @@
     "category": "warning",
     "meaning": "A steep downhill grade is ahead. Check brakes and shift to a lower gear before beginning your descent.",
     "key_rule": "Shift to a lower gear to let engine braking help control speed and prevent brake fade.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><polygon points=\"32,84 88,84 32,52\" fill=\"#000000\"/><g transform=\"translate(48,46) rotate(-28)\"><rect x=\"-14\" y=\"-8\" width=\"22\" height=\"12\" fill=\"#000000\"/><rect x=\"8\" y=\"-4\" width=\"8\" height=\"8\" fill=\"#000000\"/><circle cx=\"-8\" cy=\"6\" r=\"3\" fill=\"#000000\"/><circle cx=\"2\" cy=\"6\" r=\"3\" fill=\"#000000\"/><circle cx=\"12\" cy=\"6\" r=\"3\" fill=\"#000000\"/></g></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/hill_steep_downgrade.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/hill_steep_downgrade.png"
   },
   {
     "id": "keep_right",
@@ -267,7 +293,8 @@
     "category": "regulatory",
     "meaning": "A traffic island, median, or obstruction is ahead. You must stay to the right of the divider.",
     "key_rule": "Never pass on the left side of this island unless directed by police or flagger.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"8\" width=\"84\" height=\"104\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#000000\" stroke-width=\"4\"/><rect x=\"22\" y=\"12\" width=\"76\" height=\"96\" rx=\"6\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><path d=\"M48,34 A10,10 0 0,1 68,34 L66,64 A8,8 0 0,1 50,64 Z\" fill=\"#000000\"/><path d=\"M40,94 L40,78 Q40,54 64,42 L72,42\" fill=\"none\" stroke=\"#000000\" stroke-width=\"6\"/><polygon points=\"68,34 82,42 68,50\" fill=\"#000000\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/keep_right.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/keep_right.png"
   },
   {
     "id": "road_work_ahead",
@@ -277,7 +304,8 @@
     "category": "work_zone",
     "meaning": "Highway construction or maintenance work zone ahead. Slow down, obey flaggers, and watch for workers and machinery.",
     "key_rule": "In Virginia, speeding in a highway work zone carries an increased fine of up to $500.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FF7700\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><text x=\"60\" y=\"48\" font-family=\"Arial Black, sans-serif\" font-size=\"11\" font-weight=\"900\" fill=\"#000000\" text-anchor=\"middle\">ROAD</text><text x=\"60\" y=\"66\" font-family=\"Arial Black, sans-serif\" font-size=\"11\" font-weight=\"900\" fill=\"#000000\" text-anchor=\"middle\">WORK</text><text x=\"60\" y=\"84\" font-family=\"Arial Black, sans-serif\" font-size=\"11\" font-weight=\"900\" fill=\"#000000\" text-anchor=\"middle\">AHEAD</text></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/road_work_ahead.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/road_work_ahead.png"
   },
   {
     "id": "flagger_ahead",
@@ -287,7 +315,8 @@
     "category": "work_zone",
     "meaning": "Traffic flagger ahead directing traffic. You must follow the flagger's hand signals and paddle directions.",
     "key_rule": "A flagger's instructions override normal traffic signals or signs.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FF7700\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><circle cx=\"56\" cy=\"38\" r=\"6\" fill=\"#000000\"/><line x1=\"56\" y1=\"44\" x2=\"56\" y2=\"70\" stroke=\"#000000\" stroke-width=\"5\"/><line x1=\"56\" y1=\"52\" x2=\"34\" y2=\"46\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"34,36 34,56 22,46\" fill=\"#CC0000\"/><line x1=\"56\" y1=\"70\" x2=\"48\" y2=\"92\" stroke=\"#000000\" stroke-width=\"4\"/><line x1=\"56\" y1=\"70\" x2=\"64\" y2=\"92\" stroke=\"#000000\" stroke-width=\"4\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/flagger_ahead.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/flagger_ahead.png"
   },
   {
     "id": "workers_ahead",
@@ -297,7 +326,8 @@
     "category": "work_zone",
     "meaning": "Workers are on or near the roadway. Stay alert, slow down, and provide extra clearance.",
     "key_rule": "Orange signs designate temporary traffic control and work zones.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FF7700\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><circle cx=\"48\" cy=\"42\" r=\"6\" fill=\"#000000\"/><path d=\"M48,48 L56,66 L46,84 L40,82 L48,66 L42,54 Z\" fill=\"#000000\"/><path d=\"M54,58 L68,70 L72,66 L58,54 Z\" fill=\"#000000\"/><line x1=\"44\" y1=\"58\" x2=\"82\" y2=\"88\" stroke=\"#000000\" stroke-width=\"3\"/><polygon points=\"80,84 88,90 82,94 76,88\" fill=\"#000000\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/workers_ahead.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/workers_ahead.png"
   },
   {
     "id": "handicapped_parking",
@@ -307,17 +337,19 @@
     "category": "regulatory",
     "meaning": "Reserved strictly for vehicles displaying official disabled parking license plates or disabled placards.",
     "key_rule": "Illegal parking in disabled spaces in Virginia results in fines between $100 and $500.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"8\" width=\"84\" height=\"104\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#0044AA\" stroke-width=\"4\"/><rect x=\"22\" y=\"12\" width=\"76\" height=\"96\" rx=\"6\" fill=\"none\" stroke=\"#0044AA\" stroke-width=\"1.5\"/><rect x=\"28\" y=\"18\" width=\"64\" height=\"60\" rx=\"4\" fill=\"#0044AA\"/><circle cx=\"62\" cy=\"32\" r=\"5\" fill=\"#FFFFFF\"/><path d=\"M58,40 L66,40 L64,54 L76,54\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"56\" cy=\"56\" r=\"10\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"4\"/><text x=\"60\" y=\"92\" font-family=\"Arial, sans-serif\" font-size=\"9\" font-weight=\"bold\" fill=\"#0044AA\" text-anchor=\"middle\">RESERVED</text><text x=\"60\" y=\"103\" font-family=\"Arial, sans-serif\" font-size=\"8\" font-weight=\"bold\" fill=\"#0044AA\" text-anchor=\"middle\">PARKING</text></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/handicapped_parking.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/handicapped_parking.png"
   },
   {
     "id": "low_clearance",
-    "name": "Low Clearance (12'-6\")",
+    "name": "Low Clearance (13'-6\")",
     "shape": "Diamond",
     "color": "Yellow background with clearance measurement and opposing vertical arrows",
     "category": "warning",
-    "meaning": "Overpass or bridge ahead has limited vertical clearance. Vehicles taller than the posted height must not proceed.",
-    "key_rule": "Do not enter if vehicle and load exceed the specified clearance height.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><polygon points=\"60,26 68,36 52,36\" fill=\"#000000\"/><polygon points=\"60,94 68,84 52,84\" fill=\"#000000\"/><text x=\"60\" y=\"66\" font-family=\"Arial Black, sans-serif\" font-size=\"16\" font-weight=\"900\" fill=\"#000000\" text-anchor=\"middle\">12'-6\"</text></svg>"
+    "meaning": "The overpass ahead has a low clearance of 13 feet 6 inches. Do not proceed if your vehicle is taller than the height shown on the sign.",
+    "key_rule": "Vehicles exceeding 13'-6\" cannot pass under the bridge or overpass ahead. The official Virginia Driver's Manual specifies 13'-6\" on this sign.",
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/low_clearance.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/low_clearance.png"
   },
   {
     "id": "sharp_curve_right",
@@ -327,7 +359,8 @@
     "category": "warning",
     "meaning": "The road ahead makes a sharp 90-degree turn to the right. Reduce speed significantly before entering the turn.",
     "key_rule": "Brake before entering the curve, not while steering sharply through it.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><path d=\"M46,88 L46,54 L74,54\" fill=\"none\" stroke=\"#000000\" stroke-width=\"8\"/><polygon points=\"70,42 88,54 70,66\" fill=\"#000000\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/sharp_curve_right.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/sharp_curve_right.png"
   },
   {
     "id": "winding_road",
@@ -337,7 +370,8 @@
     "category": "warning",
     "meaning": "A series of three or more consecutive curves begins ahead. Drive with caution and reduce speed.",
     "key_rule": "First curve bends in the direction shown at the bottom of the arrow.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><path d=\"M60,88 Q48,74 60,60 T60,34\" fill=\"none\" stroke=\"#000000\" stroke-width=\"6\"/><polygon points=\"50,42 60,26 70,42\" fill=\"#000000\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/winding_road.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/winding_road.png"
   },
   {
     "id": "added_lane",
@@ -347,7 +381,8 @@
     "category": "warning",
     "meaning": "A new lane enters alongside your roadway without merging. Traffic entering does not need to merge immediately.",
     "key_rule": "Unlike merge signs, added lanes do not require immediate merging into an existing lane.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><line x1=\"44\" y1=\"92\" x2=\"44\" y2=\"34\" stroke=\"#000000\" stroke-width=\"5\"/><polygon points=\"36,44 44,28 52,44\" fill=\"#000000\"/><path d=\"M78,92 Q78,64 68,48 L68,34\" fill=\"none\" stroke=\"#000000\" stroke-width=\"5\"/><polygon points=\"60,44 68,28 76,44\" fill=\"#000000\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/added_lane.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/added_lane.png"
   },
   {
     "id": "side_road_intersection",
@@ -357,7 +392,8 @@
     "category": "warning",
     "meaning": "Another road enters the highway from the side ahead. Watch for traffic entering or turning.",
     "key_rule": "Be alert for cross traffic and vehicles pulling onto the highway.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,6 114,60 60,114 6,60\" fill=\"#FFCC00\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"60,12 108,60 60,108 12,60\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"28\" x2=\"60\" y2=\"92\" stroke=\"#000000\" stroke-width=\"8\"/><line x1=\"60\" y1=\"60\" x2=\"88\" y2=\"60\" stroke=\"#000000\" stroke-width=\"8\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/side_road_intersection.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/side_road_intersection.png"
   },
   {
     "id": "slow_moving_vehicle",
@@ -367,7 +403,8 @@
     "category": "regulatory",
     "meaning": "Mounted on the rear of vehicles traveling at 25 MPH or slower (such as farm equipment, tractors, road machinery).",
     "key_rule": "Be prepared to slow down rapidly when approaching a vehicle displaying this emblem.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,12 110,98 10,98\" fill=\"#CC0000\"/><polygon points=\"60,26 98,90 22,90\" fill=\"#FF5500\"/></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/slow_moving_vehicle.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/slow_moving_vehicle.png"
   },
   {
     "id": "center_turn_lane",
@@ -377,6 +414,7 @@
     "category": "regulatory",
     "meaning": "The center lane is reserved exclusively for left turns by traffic traveling in both directions. You must not use this lane for passing or travel.",
     "key_rule": "You may only drive in this center lane for a brief distance to prepare for a left turn.",
-    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"8\" width=\"84\" height=\"104\" rx=\"8\" fill=\"#FFFFFF\" stroke=\"#000000\" stroke-width=\"4\"/><rect x=\"22\" y=\"12\" width=\"76\" height=\"96\" rx=\"6\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\"/><path d=\"M46,84 L46,62 Q46,48 34,48\" fill=\"none\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"36,42 26,48 36,54\" fill=\"#000000\"/><path d=\"M74,36 L74,58 Q74,72 86,72\" fill=\"none\" stroke=\"#000000\" stroke-width=\"4\"/><polygon points=\"84,66 94,72 84,78\" fill=\"#000000\"/><text x=\"60\" y=\"65\" font-family=\"Arial Black, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#000000\" text-anchor=\"middle\">ONLY</text></svg>"
+    "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\" class=\"official-sign-svg\"><image href=\"/images/signs/center_turn_lane.png\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+    "image_url": "/images/signs/center_turn_lane.png"
   }
 ]

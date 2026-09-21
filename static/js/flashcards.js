@@ -92,6 +92,7 @@ class SignFlashcards {
       if (window.soundFX) window.soundFX.correct();
     }
     localStorage.setItem('va_dmv_mastered_signs', JSON.stringify(Array.from(this.masteredIds)));
+    if (window.app) window.app.queueServerSync();
     this.updateStats();
     this.renderFlashcard();
     this.renderGallery();

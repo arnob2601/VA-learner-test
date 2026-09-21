@@ -340,15 +340,15 @@
   {
     "id": "sq27",
     "signId": "low_clearance",
-    "question": "What does a sign stating '12'-6\"' with top and bottom arrows mean?",
+    "question": "What does a low clearance sign stating 13'-6\" with top and bottom arrows mean?",
     "options": [
-      "The bridge or overpass ahead has a maximum height clearance of 12 feet, 6 inches.",
-      "The roadway width is restricted to 12 feet, 6 inches.",
-      "Maximum vehicle length allowed on this roadway is 12.6 feet.",
-      "The distance to the nearest fuel station is 12.6 miles."
+      "The bridge or overpass ahead has a maximum height clearance of 13 feet, 6 inches; do not proceed if taller.",
+      "The roadway width is restricted to 13 feet, 6 inches.",
+      "Maximum vehicle length allowed on this roadway is 13.6 feet.",
+      "The distance to the nearest fuel station is 13.6 miles."
     ],
     "answerIndex": 0,
-    "explanation": "This warning sign alerts drivers that the overhead structure has limited vertical clearance (12 feet 6 inches). Vehicles exceeding this height must seek an alternate route."
+    "explanation": "The official Virginia Driver's Manual displays 13'-6\" on this warning sign. It alerts drivers that the overhead structure has limited clearance. Vehicles taller than the posted clearance cannot pass under the bridge or overpass."
   },
   {
     "id": "sq28",
@@ -444,15 +444,15 @@
   {
     "id": "sq35",
     "signId": "side_road_intersection",
-    "question": "What does this yellow diamond sign with a cross intersection warn of?",
+    "question": "What does this yellow diamond sign with a side road intersection warn of?",
     "options": [
-      "A hospital entrance is ahead.",
       "A side road enters the highway from the right ahead; watch for entering traffic.",
-      "Railroad tracks crossing the highway ahead.",
-      "Four-way stop intersection ahead."
+      "A divided highway is ending ahead.",
+      "A sharp left turn with a speed reduction.",
+      "Cross traffic does not stop."
     ],
     "answerIndex": 1,
-    "explanation": "A side road sign warns of an upcoming side street intersecting from the side shown. Drivers should watch for vehicles entering or turning."
+    "explanation": "A side road sign warns of an upcoming side street intersecting from the side shown (right). Be alert for vehicles entering the roadway on which you are traveling."
   },
   {
     "id": "sq36",

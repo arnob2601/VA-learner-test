@@ -677,26 +677,35 @@ body {
 }
 
 .feedback-correct {
-  background-color: var(--success-light);
-  border: 1px solid var(--success);
-  color: var(--success);
+  background-color: #ECFDF5;
+  border: 1px solid #10B981;
+  color: #064E3B;
+}
+
+.feedback-correct .feedback-header {
+  color: #064E3B;
+}
+
+.feedback-correct .feedback-explanation {
+  font-size: 0.95rem;
+  color: #064E3B;
+  font-weight: 500;
 }
 
 .feedback-incorrect {
-  background-color: var(--danger-light);
-  border: 1px solid var(--danger);
+  background-color: #FEF2F2;
+  border: 1px solid #EF4444;
   color: #7F1D1D;
 }
 
-.feedback-header {
-  font-size: 1.1rem;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
+.feedback-incorrect .feedback-header {
+  color: #7F1D1D;
 }
 
-.feedback-explanation {
+.feedback-incorrect .feedback-explanation {
   font-size: 0.95rem;
-  color: var(--text-main);
+  color: #7F1D1D;
+  font-weight: 500;
 }
 
 .exam-actions-bar {
@@ -1325,6 +1334,110 @@ body {
 .badge-railroad { background: #EDE7F6; color: #512DA8; }
 .badge-guide { background: #E8F5E9; color: #2E7D32; }
 
+/* Official Sign Graphics & SVG Images */
+.official-sign-img {
+  max-width: 100%;
+  max-height: 220px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.18));
+  border-radius: 6px;
+  transition: transform 0.25s ease;
+}
+
+.official-sign-svg {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.18));
+}
+
+.sign-svg-large .official-sign-svg,
+.sign-svg-large .official-sign-img {
+  max-height: 240px;
+  max-width: 240px;
+}
+
+.exam-sign-visual .official-sign-svg,
+.exam-sign-visual .official-sign-img {
+  max-height: 220px;
+  max-width: 220px;
+}
+
+.sign-gallery-svg .official-sign-svg,
+.sign-gallery-svg .official-sign-img {
+  max-height: 110px;
+  max-width: 110px;
+}
+
+.missed-sign-thumb .official-sign-svg,
+.missed-sign-thumb .official-sign-img,
+.review-sign-thumb .official-sign-svg,
+.review-sign-thumb .official-sign-img {
+  max-height: 80px;
+  max-width: 80px;
+}
+
+/* In-Progress Exam Resume Banner */
+.resume-banner {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.16), rgba(217, 119, 6, 0.24));
+  border: 2px solid var(--warning, #f59e0b);
+  border-radius: var(--radius-md, 12px);
+  padding: 1.1rem 1.4rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.25);
+  animation: pulseResume 3s infinite ease-in-out;
+}
+
+@keyframes pulseResume {
+  0%, 100% { box-shadow: 0 4px 14px rgba(245, 158, 11, 0.2); }
+  50% { box-shadow: 0 6px 24px rgba(245, 158, 11, 0.35); }
+}
+
+.resume-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.resume-banner-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.resume-banner-text h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: #b45309;
+}
+
+body.theme-dark .resume-banner-text h3 {
+  color: #fbbf24;
+}
+
+.resume-banner-text p {
+  font-size: 0.9rem;
+  color: var(--text-muted, #64748b);
+  margin: 0;
+}
+
+.resume-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hero-banner { padding: 1.5rem; }
@@ -1334,4 +1447,6 @@ body {
   .question-text { font-size: 1.15rem; }
   .results-score-card { flex-direction: column; text-align: center; }
   .results-stats-grid { width: 100%; }
+  .resume-banner { flex-direction: column; align-items: flex-start; }
+  .resume-banner-actions { width: 100%; justify-content: flex-start; }
 }

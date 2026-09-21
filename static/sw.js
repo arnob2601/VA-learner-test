@@ -1,5 +1,5 @@
 // Virginia DMV Permit Exam Service Worker
-const CACHE_NAME = 'va-dmv-exam-v1';
+const CACHE_NAME = 'va-dmv-exam-v2';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',

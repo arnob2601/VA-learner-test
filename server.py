@@ -7,9 +7,11 @@ and handles concurrent local connections using Python's standard library.
 import os
 import sys
 import json
+import time
 import socket
 import subprocess
 import argparse
+import urllib.parse
 from http.server import SimpleHTTPRequestHandler
 from socketserver import ThreadingMixIn, TCPServer
 
@@ -18,6 +20,79 @@ import qr_generator
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_DIR = os.path.join(BASE_DIR, "static")
 DATA_DIR = os.path.join(BASE_DIR, "data")
+PROGRESS_FILE = os.path.join(DATA_DIR, "user_progress.json")
+
+def load_progress(client_id=None):
+    """Loads client progress from persistent disk store."""
+    default_data = {
+        "clientId": client_id or "default",
+        "history": [],
+        "missedQuestions": [],
+        "masteredSigns": [],
+        "activeExam": None,
+        "theme": "modern",
+        "audioEnabled": True,
+        "updatedAt": 0
+    }
+    if os.path.exists(PROGRESS_FILE):
+        try:
+            with open(PROGRESS_FILE, 'r', encoding='utf-8') as f:
+                store = json.load(f)
+            if client_id and "clients" in store and client_id in store["clients"]:
+                return store["clients"][client_id]
+            if "default" in store and store["default"]:
+                res = dict(store["default"])
+                if client_id:
+                    res["clientId"] = client_id
+                return res
+            if "history" in store or "missedQuestions" in store:
+                return store
+        except Exception as e:
+            sys.stderr.write(f"Error reading progress file {PROGRESS_FILE}: {e}\n")
+    return default_data
+
+def save_progress(payload):
+    """Atomically saves client progress to persistent disk store."""
+    if not isinstance(payload, dict):
+        return False, "Payload must be a JSON object"
+    
+    client_id = payload.get("clientId") or "default"
+    store = {"default": {}, "clients": {}}
+    if os.path.exists(PROGRESS_FILE):
+        try:
+            with open(PROGRESS_FILE, 'r', encoding='utf-8') as f:
+                existing = json.load(f)
+                if isinstance(existing, dict):
+                    if "clients" in existing:
+                        store = existing
+                    else:
+                        store["default"] = existing
+        except Exception:
+            pass
+
+    updated_at = int(time.time() * 1000)
+    payload["updatedAt"] = updated_at
+    payload["clientId"] = client_id
+    store.setdefault("clients", {})[client_id] = payload
+    store["default"] = payload  # Most recently active client becomes default
+
+    # Atomic write pattern using temp file and os.replace
+    tmp_file = f"{PROGRESS_FILE}.tmp.{os.getpid()}"
+    try:
+        with open(tmp_file, 'w', encoding='utf-8') as f:
+            json.dump(store, f, indent=2)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_file, PROGRESS_FILE)
+        return True, updated_at
+    except Exception as e:
+        if os.path.exists(tmp_file):
+            try:
+                os.remove(tmp_file)
+            except OSError:
+                pass
+        sys.stderr.write(f"Failed to atomically persist progress: {e}\n")
+        return False, str(e)
 
 def get_lan_ip():
     """Detects the machine's local Wi-Fi / Ethernet LAN IP address."""
@@ -70,6 +145,15 @@ class VirginiaQuizRequestHandler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         path = self.path.split('?')[0]
+
+        # API: Health Check
+        if path == '/api/health':
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.end_headers()
+            self.wfile.write(b'{"status":"ok"}')
+            return
 
         # API: Network Info for iPad modal
         if path == '/api/network-info':
@@ -137,6 +221,21 @@ class VirginiaQuizRequestHandler(SimpleHTTPRequestHandler):
                 self.send_error(500, f"Error loading quiz data: {str(e)}")
                 return
 
+        # API: Client Progress
+        if path == '/api/progress':
+            client_id = None
+            if '?' in self.path:
+                qs = urllib.parse.parse_qs(self.path.split('?', 1)[1])
+                client_id = qs.get('clientId', [None])[0]
+            progress = load_progress(client_id)
+            data_bytes = json.dumps(progress).encode('utf-8')
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.send_header('Content-Length', str(len(data_bytes)))
+            self.end_headers()
+            self.wfile.write(data_bytes)
+            return
+
         # Serve files from data directory
         if path.startswith('/data/'):
             filename = os.path.basename(path)
@@ -158,10 +257,52 @@ class VirginiaQuizRequestHandler(SimpleHTTPRequestHandler):
         # Default fallback to static directory handler
         return super().do_GET()
 
+    def do_OPTIONS(self):
+        self.send_response(204)
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+        self.end_headers()
+
+    def do_POST(self):
+        path = self.path.split('?')[0]
+
+        if path == '/api/progress':
+            try:
+                content_length = int(self.headers.get('Content-Length', 0))
+                body = self.rfile.read(content_length).decode('utf-8')
+                payload = json.loads(body)
+                success, info = save_progress(payload)
+                if success:
+                    res = {
+                        "status": "ok",
+                        "savedAt": info,
+                        "clientId": payload.get("clientId", "default")
+                    }
+                    res_bytes = json.dumps(res).encode('utf-8')
+                    self.send_response(200)
+                    self.send_header('Content-Type', 'application/json; charset=utf-8')
+                    self.send_header('Content-Length', str(len(res_bytes)))
+                    self.end_headers()
+                    self.wfile.write(res_bytes)
+                else:
+                    self.send_error(500, f"Error saving progress: {info}")
+            except Exception as e:
+                self.send_error(400, f"Invalid progress payload: {str(e)}")
+            return
+
+        self.send_error(404, "Endpoint not found")
+
     def guess_type(self, path):
         # Ensure correct MIME types for modern web assets
         if path.endswith('.svg'):
             return 'image/svg+xml'
+        if path.endswith('.png'):
+            return 'image/png'
+        if path.endswith('.jpg') or path.endswith('.jpeg'):
+            return 'image/jpeg'
+        if path.endswith('.webp'):
+            return 'image/webp'
         if path.endswith('.json'):
             return 'application/json; charset=utf-8'
         if path.endswith('.js'):

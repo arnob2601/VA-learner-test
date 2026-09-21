@@ -153,10 +153,19 @@ class AppController {
     this.currentScreen = 'screen-home';
     this.theme = localStorage.getItem('va_dmv_theme') || 'modern';
     this.networkInfo = null;
+    this.clientId = localStorage.getItem('va_dmv_client_id');
+    if (!this.clientId) {
+      this.clientId = 'client_' + Math.random().toString(36).substring(2, 9) + Date.now().toString(36);
+      localStorage.setItem('va_dmv_client_id', this.clientId);
+    }
+    this.syncTimer = null;
   }
 
   async init() {
     window.soundFX = new SoundEffects();
+
+    // Sync progress from server persistent store first
+    await this.syncWithServer();
 
     this.applyTheme(this.theme);
     this.setupNavigation();
@@ -241,7 +250,7 @@ class AppController {
     }
   }
 
-  applyTheme(theme) {
+  applyTheme(theme, sync = true) {
     this.theme = theme;
     localStorage.setItem('va_dmv_theme', theme);
     document.body.className = `theme-${theme}`;
@@ -254,6 +263,9 @@ class AppController {
         dark: '🌙 Theme: Dark'
       };
       themeBtn.textContent = labels[theme] || 'Theme';
+    }
+    if (sync) {
+      this.queueServerSync();
     }
   }
 
@@ -310,7 +322,93 @@ class AppController {
     });
   }
 
-  // --- LocalStorage Tracking & Metrics ---
+  // --- LocalStorage & Server-Side Persistence Sync ---
+
+  async syncWithServer() {
+    try {
+      const resp = await fetch(`/api/progress?clientId=${encodeURIComponent(this.clientId)}`);
+      if (!resp.ok) return;
+      const serverProgress = await resp.json();
+      if (!serverProgress) return;
+
+      // 1. Merge test history
+      const localHistory = this.getTestHistory();
+      const remoteHistory = Array.isArray(serverProgress.history) ? serverProgress.history : [];
+      const historyMap = new Map();
+      [...localHistory, ...remoteHistory].forEach(item => {
+        if (item && item.timestamp) {
+          historyMap.set(item.timestamp, item);
+        }
+      });
+      const mergedHistory = Array.from(historyMap.values())
+        .sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0))
+        .slice(0, 30);
+      localStorage.setItem('va_dmv_history', JSON.stringify(mergedHistory));
+
+      // 2. Merge missed questions
+      const localMissed = this.getMissedQuestionIds();
+      const remoteMissed = Array.isArray(serverProgress.missedQuestions) ? serverProgress.missedQuestions : [];
+      const mergedMissed = Array.from(new Set([...localMissed, ...remoteMissed]));
+      localStorage.setItem('va_dmv_missed_questions', JSON.stringify(mergedMissed));
+
+      // 3. Merge mastered signs
+      const localMastered = JSON.parse(localStorage.getItem('va_dmv_mastered_signs') || '[]');
+      const remoteMastered = Array.isArray(serverProgress.masteredSigns) ? serverProgress.masteredSigns : [];
+      const mergedMastered = Array.from(new Set([...localMastered, ...remoteMastered]));
+      localStorage.setItem('va_dmv_mastered_signs', JSON.stringify(mergedMastered));
+      if (window.signFlashcards) {
+        window.signFlashcards.masteredIds = new Set(mergedMastered);
+        window.signFlashcards.updateStats();
+      }
+
+      // 4. Merge theme
+      if (serverProgress.theme && ['modern', 'kiosk', 'dark'].includes(serverProgress.theme)) {
+        this.applyTheme(serverProgress.theme, false);
+      }
+
+      // 5. Active exam state
+      if (serverProgress.activeExam && !localStorage.getItem('va_dmv_active_exam')) {
+        localStorage.setItem('va_dmv_active_exam', JSON.stringify(serverProgress.activeExam));
+      }
+
+      // Send consolidated payload back to server
+      this.queueServerSync();
+    } catch (err) {
+      console.warn('Could not sync progress with server:', err);
+    }
+  }
+
+  queueServerSync() {
+    if (this.syncTimer) clearTimeout(this.syncTimer);
+    this.syncTimer = setTimeout(() => {
+      this.sendProgressToServer();
+    }, 150);
+  }
+
+  async sendProgressToServer() {
+    try {
+      const activeExam = localStorage.getItem('va_dmv_active_exam') ?
+        JSON.parse(localStorage.getItem('va_dmv_active_exam')) : null;
+
+      const payload = {
+        clientId: this.clientId,
+        history: this.getTestHistory(),
+        missedQuestions: this.getMissedQuestionIds(),
+        masteredSigns: JSON.parse(localStorage.getItem('va_dmv_mastered_signs') || '[]'),
+        activeExam: activeExam,
+        theme: this.theme,
+        audioEnabled: window.examSpeech ? window.examSpeech.enabled : true
+      };
+
+      await fetch('/api/progress', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+    } catch (err) {
+      console.warn('Background progress save to server failed (persisted in localStorage):', err);
+    }
+  }
 
   getMissedQuestionIds() {
     return JSON.parse(localStorage.getItem('va_dmv_missed_questions') || '[]');
@@ -321,6 +419,7 @@ class AppController {
     if (!list.includes(questionId)) {
       list.push(questionId);
       localStorage.setItem('va_dmv_missed_questions', JSON.stringify(list));
+      this.queueServerSync();
     }
   }
 
@@ -328,10 +427,12 @@ class AppController {
     let list = this.getMissedQuestionIds();
     list = list.filter(id => id !== questionId);
     localStorage.setItem('va_dmv_missed_questions', JSON.stringify(list));
+    this.queueServerSync();
   }
 
   clearAllMissedQuestions() {
     localStorage.removeItem('va_dmv_missed_questions');
+    this.queueServerSync();
     this.renderMissedQuestionsScreen();
     this.updateDashboardMetrics();
   }
@@ -346,6 +447,7 @@ class AppController {
     // Keep last 30 attempts
     if (history.length > 30) history.pop();
     localStorage.setItem('va_dmv_history', JSON.stringify(history));
+    this.queueServerSync();
     this.updateDashboardMetrics();
   }
 
@@ -370,7 +472,6 @@ class AppController {
     if (missedCountEl) missedCountEl.textContent = missedIds.length;
 
     // Readiness score calculation (0 - 100)
-    // Weight: 40% Pass Rate + 30% Signs Mastered + 30% (Tests taken & low missed count)
     let readiness = 0;
     if (totalTests > 0) {
       readiness += (passRate * 0.45);
@@ -385,6 +486,34 @@ class AppController {
       readinessScoreEl.textContent = `${readiness}%`;
       const meterEl = document.getElementById('dash-readiness-meter');
       if (meterEl) meterEl.style.width = `${readiness}%`;
+    }
+
+    // Check for preserved in-progress active exam
+    const activeExamRaw = localStorage.getItem('va_dmv_active_exam');
+    const banner = document.getElementById('resume-exam-banner');
+    if (banner) {
+      if (activeExamRaw) {
+        try {
+          const activeState = JSON.parse(activeExamRaw);
+          const totalQ = activeState.questions ? activeState.questions.length : 10;
+          const currentQ = (activeState.currentIndex || 0) + 1;
+          const modeLabels = {
+            dmv_real: 'DMV Real Exam Simulation',
+            practice: 'Practice Exam',
+            topic: 'Topic Quiz',
+            missed: 'Missed Questions Drill'
+          };
+          const titleEl = document.getElementById('resume-banner-title');
+          const progEl = document.getElementById('resume-progress-text');
+          if (titleEl) titleEl.textContent = `${modeLabels[activeState.mode] || 'Exam'} in Progress`;
+          if (progEl) progEl.textContent = `Question ${currentQ} of ${totalQ}`;
+          banner.style.display = 'flex';
+        } catch (e) {
+          banner.style.display = 'none';
+        }
+      } else {
+        banner.style.display = 'none';
+      }
     }
   }
 
